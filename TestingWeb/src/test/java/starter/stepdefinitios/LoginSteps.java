@@ -5,24 +5,28 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import net.thucydides.core.annotations.Steps;
+import starter.pages.DashboardPage;
 import starter.pages.LoginPage;
 
 
 public class LoginSteps {
     @Steps
     LoginPage loginPage;
-
-    @Given("I am open the login page")
-    public void iAmOpenTheLoginPage() {
-        loginPage.openLoginPage();
+    @Steps
+    DashboardPage dashboardPage;
+    @Given("User selects admin role")
+    public void userSelectsAdminRole() {
+        loginPage.clickButtonRole();
+        loginPage.clickAdmin();
     }
-    @When("I am on the login page")
-    public void iAmOnTheLoginPage() {
-        loginPage.validateOnLoginPage();
+    @Given("User selects dokter role")
+    public void userSelectsDokterRole() {
+        loginPage.clickButtonRole();
+        loginPage.clickDokter();
     }
-    @And("I input {string} login email")
-    public void iInputEmailLogin(String email) {
-        loginPage.inputEmailLogin(email);
+    @When("I input {string} login email")
+    public void iInputEmailLogin(String username) {
+        loginPage.inputEmailLogin(username);
     }
     @And("I input {string} login password")
     public void iInputPasswordLogin(String password) {
@@ -36,5 +40,9 @@ public class LoginSteps {
     public void loginValidation(String error) {
         loginPage.loginTextError();
         loginPage.validateEqualErrorText(error);
+    }
+    @And("Click icon logout account")
+    public void clickIconLogoutAccount() {
+        dashboardPage.clickButtonLogoutAccount();
     }
 }

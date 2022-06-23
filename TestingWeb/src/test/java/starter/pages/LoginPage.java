@@ -17,17 +17,31 @@ public class LoginPage extends PageObject {
     private By errorMessager() {
         return By.xpath("//*[@class=\"v-card__text\"]/div/div/div");
     }
-    private By loginPage() {
-        return By.xpath("//*[@class=\"v-main\"]/div/div/div/div");
+    private By pilihRole() {
+        return By.xpath("");
+    }
+    private By roleAdmin() {
+        return By.xpath("");
+    }
+    private By roleDokter() {
+        return By.xpath("");
     }
 
     @Step
-    public void openLoginPage() {
-        openAt("/auth/login");
+    public void clickButtonRole() {
+        $(pilihRole()).click();
     }
     @Step
-    public void inputEmailLogin(String emailLogin) {
-        $(emailFieldLogin()).type(emailLogin);
+    public void clickAdmin() {
+        $(roleAdmin()).click();
+    }
+    @Step
+    public void clickDokter() {
+        $(roleDokter()).click();
+    }
+    @Step
+    public void inputEmailLogin(String usernameLogin) {
+        $(emailFieldLogin()).type(usernameLogin);
     }
     @Step
     public void inputPasswordLogin(String passwordLogin) {
@@ -45,16 +59,5 @@ public class LoginPage extends PageObject {
     public boolean validateEqualErrorText(String error){
         return $(errorMessager()).getText().equalsIgnoreCase(error);
     }
-    @Step
-    public boolean validateOnLoginPage() {
-        return $(loginPage()).isDisabled();
-    }
-    @Step
-    public boolean loginInvalidPassword() {
-        return $(errorMessager()).isDisabled();
-    }
-    @Step
-    public boolean validateEqualErrorPassword(String errorpassword){
-        return $(errorMessager()).getText().equalsIgnoreCase(errorpassword);
-    }
 }
+
