@@ -1,0 +1,5 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Delete Data Dokter - Admin","As a admin i want to delete data dokter","SUCCESS","2022-06-23T20:33:49.1431223+07:00[Asia/Bangkok]","0.0","9.83"
+"Search Data Pasien - Admin","As a admin i want to delete data pasien","SUCCESS","2022-06-23T20:41:10.2604222+07:00[Asia/Bangkok]","0.0","9.8"
+"View Data Dokter - Admin","As a admin i want to view data dokter","SUCCESS","2022-06-23T20:41:22.4884186+07:00[Asia/Bangkok]","0.0","8.99"
+"View Data Pasien - Admin","As a admin i want to view data pasien","SUCCESS","2022-06-23T20:41:33.6527483+07:00[Asia/Bangkok]","0.0","8.96"

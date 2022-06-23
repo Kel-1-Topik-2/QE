@@ -1,0 +1,406 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="bootstrap-icons/font/bootstrap-icons.css"><!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.11.3/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.11.3/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.11.3/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/>
+<!--CHART.JS-->
+<script src="chartjs/chart.js"></script>
+<script src="chartjs/chartjs-plugin-datalabels@2.0.0"></script>
+<script src="chartjs/patternomaly.min.js"></script>
+<script>
+    // Register the plugin to all charts:
+    Chart.register(ChartDataLabels);
+</script>
+<!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle"></span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="4c78a7dce8aa7474ea5e9c8787540c6233921a78cb8d2d817fdb8653e7c07544.html">Edit Data Dokter - Admin</a></span>
+                > <span class="truncate-60"><a
+                    href="f42945eb904bdf28d0fa64262ff8040810e969a43059780252ada3c2a668386e.html">As a admin i want to edit data dokter </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="bi bi-journal-check"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="bi bi-journal-text"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 23-06-2022 20:34</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fs-2 bi bi-chat-left-quote large-icon"></i>
+                                    <span class="story-header-title">Edit Data Dokter - Admin </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="9863baea1b6bc99a56e8d42b2c09c4db6e5fa8002540518b2f6174aaac2828c9.html">Edit Dokter Data
+                                    (tag)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">As a admin i want to edit data dokter
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+    <div class="story-title">
+        <h3>Scenario:</h3>
+        <div class="scenario">Given Open page data dokter<br>And Click Detail dokter data<br>When Valid data detail dokter<br>And Click button edit profil<br>Then I input edit "&lt;namalengkap&gt;" "&lt;idi&gt;" "&lt;spesialis&gt;" "&lt;username&gt;" "&lt;pass&gt;" dokter<br>And Click button simpan<br>And Valid edit data</div>
+    </div>
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="ee66319f8cb5850ca609fa5af5fccf9e8848aa4d878c3d081ff200c30ff79dfd.png" title=" 1: As a admin i want to edit data dokter ({namalengkap=21122, idi=bagas, spesialis=00942534590, username=*Y*(^21333, pass=*Y*(^21333})" width="1034"/>
+                <img src="ee66319f8cb5850ca609fa5af5fccf9e8848aa4d878c3d081ff200c30ff79dfd.png" title=" Given Open page data dokter" width="1034"/>
+                <img src="ee66319f8cb5850ca609fa5af5fccf9e8848aa4d878c3d081ff200c30ff79dfd.png" title=" Open data dokter" width="1034"/>
+                <img src="ee66319f8cb5850ca609fa5af5fccf9e8848aa4d878c3d081ff200c30ff79dfd.png" title=" Given Open page data dokter (completed)" width="1034"/>
+                <img src="ee66319f8cb5850ca609fa5af5fccf9e8848aa4d878c3d081ff200c30ff79dfd.png" title=" And Click Detail dokter data" width="1034"/>
+                <img src="ee66319f8cb5850ca609fa5af5fccf9e8848aa4d878c3d081ff200c30ff79dfd.png" title=" Click button detail" width="1034"/>
+                <img src="c38e676509f925990e0ed7be9f73ee76517811873c3dd9ebd6049b6df69758e5.png" title=" Click button detail (completed)" width="1034"/>
+                <img src="c38e676509f925990e0ed7be9f73ee76517811873c3dd9ebd6049b6df69758e5.png" title=" And Click Detail dokter data (completed)" width="1034"/>
+                <img src="c38e676509f925990e0ed7be9f73ee76517811873c3dd9ebd6049b6df69758e5.png" title=" When Valid data detail dokter" width="1034"/>
+                <img src="c38e676509f925990e0ed7be9f73ee76517811873c3dd9ebd6049b6df69758e5.png" title=" Check valid data pasien" width="1034"/>
+                <img src="c38e676509f925990e0ed7be9f73ee76517811873c3dd9ebd6049b6df69758e5.png" title=" Check valid data pasien (completed)" width="1034"/>
+                <img src="c38e676509f925990e0ed7be9f73ee76517811873c3dd9ebd6049b6df69758e5.png" title=" When Valid data detail dokter (completed)" width="1034"/>
+                <img src="c38e676509f925990e0ed7be9f73ee76517811873c3dd9ebd6049b6df69758e5.png" title=" And Click button edit profil" width="1034"/>
+                <img src="c38e676509f925990e0ed7be9f73ee76517811873c3dd9ebd6049b6df69758e5.png" title=" Click button edit data pasien" width="1034"/>
+                <img src="6bcdf5f5eebcae8cfa3aa909bec22004a237d2da78416efe95c288315d8d1b63.png" title=" Click button edit data pasien (completed)" width="1034"/>
+                <img src="6bcdf5f5eebcae8cfa3aa909bec22004a237d2da78416efe95c288315d8d1b63.png" title=" And Click button edit profil (completed)" width="1034"/>
+                <img src="6bcdf5f5eebcae8cfa3aa909bec22004a237d2da78416efe95c288315d8d1b63.png" title=" Then I input edit &quot;21122&quot; &quot;bagas&quot; &quot;00942534590&quot; &quot;*Y*(^21333&quot; &quot;*Y*(^21333&quot; dokter" width="1034"/>
+                <img src="6bcdf5f5eebcae8cfa3aa909bec22004a237d2da78416efe95c288315d8d1b63.png" title=" Input data dokter edit: 21122, bagas, 00942534590, *Y*(^21333, *Y*(^21333" width="1034"/>
+                <img src="a9ed23678121ffba5234cbe9ab369e9aaf22e20a0a94ff6b40f6dba768debf7a.png" title=" Input data dokter edit: 21122, bagas, 00942534590, *Y*(^21333, *Y*(^21333 (completed)" width="1034"/>
+                <img src="488c87405e841ae89638c4d31d093d05aa47425ab3eaddafcf1da05535565b93.png" title=" Then I input edit &quot;21122&quot; &quot;bagas&quot; &quot;00942534590&quot; &quot;*Y*(^21333&quot; &quot;*Y*(^21333&quot; dokter (completed)" width="1034"/>
+                <img src="488c87405e841ae89638c4d31d093d05aa47425ab3eaddafcf1da05535565b93.png" title=" And Click button simpan" width="1034"/>
+                <img src="488c87405e841ae89638c4d31d093d05aa47425ab3eaddafcf1da05535565b93.png" title=" Click button save" width="1034"/>
+                <img src="392f66b2b11e00fc2a7b38f9f144f09b982d37962a86291199075eda46ee945c.png" title=" And Valid edit data" width="1034"/>
+                <img src="392f66b2b11e00fc2a7b38f9f144f09b982d37962a86291199075eda46ee945c.png" title=" Click button back" width="1034"/>
+                <img src="e83d1bba976c4822ceb229ed9b1b37013111144d739bdb5c5f61db4d0f2b214f.png" title=" Click button back (completed)" width="1034"/>
+                <img src="e83d1bba976c4822ceb229ed9b1b37013111144d739bdb5c5f61db4d0f2b214f.png" title=" Check valid data pasien" width="1034"/>
+                <img src="3614ded854e7e5462bb729056ddcec871d0310443e0570d7c996a01a58d949b6.png" title=" Check valid data pasien (completed)" width="1034"/>
+                <img src="3614ded854e7e5462bb729056ddcec871d0310443e0570d7c996a01a58d949b6.png" title=" And Valid edit data (completed)" width="1034"/>
+                <img src="3614ded854e7e5462bb729056ddcec871d0310443e0570d7c996a01a58d949b6.png" title=" 1: As a admin i want to edit data dokter ({namalengkap=21122, idi=bagas, spesialis=00942534590, username=*Y*(^21333, pass=*Y*(^21333}) (completed)" width="1034"/>
+                <img src="641553ea0c7ee1350e9d99c43bd8b22ab0037bbbf11d544d65f62061eb96ca5a.png" title=" 2: As a admin i want to edit data dokter ({namalengkap=21122, idi=12344, spesialis=Dokter Gigi, username=BagasBedah, pass=BagasBedah})" width="1034"/>
+                <img src="641553ea0c7ee1350e9d99c43bd8b22ab0037bbbf11d544d65f62061eb96ca5a.png" title=" Given Open page data dokter" width="1034"/>
+                <img src="641553ea0c7ee1350e9d99c43bd8b22ab0037bbbf11d544d65f62061eb96ca5a.png" title=" Open data dokter" width="1034"/>
+                <img src="641553ea0c7ee1350e9d99c43bd8b22ab0037bbbf11d544d65f62061eb96ca5a.png" title=" Given Open page data dokter (completed)" width="1034"/>
+                <img src="641553ea0c7ee1350e9d99c43bd8b22ab0037bbbf11d544d65f62061eb96ca5a.png" title=" And Click Detail dokter data" width="1034"/>
+                <img src="1ffc687ce7595c2c5d042a4de6661d2e6af83ff03a6df547293bd5b43ba5065e.png" title=" Click button detail" width="1034"/>
+                <img src="b54c10433f91db8893cee4352dd24476349ce8479e4683fd2f5863f4098f1700.png" title=" Click button detail (completed)" width="1034"/>
+                <img src="b54c10433f91db8893cee4352dd24476349ce8479e4683fd2f5863f4098f1700.png" title=" And Click Detail dokter data (completed)" width="1034"/>
+                <img src="b54c10433f91db8893cee4352dd24476349ce8479e4683fd2f5863f4098f1700.png" title=" When Valid data detail dokter" width="1034"/>
+                <img src="1e98b75541796aab9f777c8836582f0ffe773086abf9f7a23e169c26389136a7.png" title=" Check valid data pasien" width="1034"/>
+                <img src="1e98b75541796aab9f777c8836582f0ffe773086abf9f7a23e169c26389136a7.png" title=" Check valid data pasien (completed)" width="1034"/>
+                <img src="1e98b75541796aab9f777c8836582f0ffe773086abf9f7a23e169c26389136a7.png" title=" When Valid data detail dokter (completed)" width="1034"/>
+                <img src="1e98b75541796aab9f777c8836582f0ffe773086abf9f7a23e169c26389136a7.png" title=" And Click button edit profil" width="1034"/>
+                <img src="1e98b75541796aab9f777c8836582f0ffe773086abf9f7a23e169c26389136a7.png" title=" Click button edit data pasien" width="1034"/>
+                <img src="f80dac1e938c15ad3c20cc00fc1d4f4f43e972d28d2fa153bfd4cca65ab22c7d.png" title=" Click button edit data pasien (completed)" width="1034"/>
+                <img src="f80dac1e938c15ad3c20cc00fc1d4f4f43e972d28d2fa153bfd4cca65ab22c7d.png" title=" And Click button edit profil (completed)" width="1034"/>
+                <img src="f80dac1e938c15ad3c20cc00fc1d4f4f43e972d28d2fa153bfd4cca65ab22c7d.png" title=" Then I input edit &quot;21122&quot; &quot;12344&quot; &quot;Dokter Gigi&quot; &quot;BagasBedah&quot; &quot;BagasBedah&quot; dokter" width="1034"/>
+                <img src="f80dac1e938c15ad3c20cc00fc1d4f4f43e972d28d2fa153bfd4cca65ab22c7d.png" title=" Input data dokter edit: 21122, 12344, Dokter Gigi, BagasBedah, BagasBedah" width="1034"/>
+                <img src="f685455aa6303f5f3f50402372eae48eb1a6acc5a61dd900d03c2877b0db3065.png" title=" Input data dokter edit: 21122, 12344, Dokter Gigi, BagasBedah, BagasBedah (completed)" width="1034"/>
+                <img src="f685455aa6303f5f3f50402372eae48eb1a6acc5a61dd900d03c2877b0db3065.png" title=" Then I input edit &quot;21122&quot; &quot;12344&quot; &quot;Dokter Gigi&quot; &quot;BagasBedah&quot; &quot;BagasBedah&quot; dokter (completed)" width="1034"/>
+                <img src="f685455aa6303f5f3f50402372eae48eb1a6acc5a61dd900d03c2877b0db3065.png" title=" And Click button simpan" width="1034"/>
+                <img src="9f5bd0f2980fc2e5df61490058089a22d6e671b0f5005324f66a98efadc4a758.png" title=" Click button save" width="1034"/>
+                <img src="fd6b56e5f342a2adf2a896aa4a6b129f442417005c893757c0d48475c071968d.png" title=" And Valid edit data" width="1034"/>
+                <img src="fd6b56e5f342a2adf2a896aa4a6b129f442417005c893757c0d48475c071968d.png" title=" Click button back" width="1034"/>
+                <img src="94b6ae48c5c9bbfb21f7014180f2df81d320fc10d6ed7b4f2c2c296a6f3bc589.png" title=" Click button back (completed)" width="1034"/>
+                <img src="94b6ae48c5c9bbfb21f7014180f2df81d320fc10d6ed7b4f2c2c296a6f3bc589.png" title=" Check valid data pasien" width="1034"/>
+                <img src="a4c1972ce35933fe391faf9fa62d18952cadf2adb06b9c8a016db6f750606d6c.png" title=" Check valid data pasien (completed)" width="1034"/>
+                <img src="a4c1972ce35933fe391faf9fa62d18952cadf2adb06b9c8a016db6f750606d6c.png" title=" And Valid edit data (completed)" width="1034"/>
+                <img src="a4c1972ce35933fe391faf9fa62d18952cadf2adb06b9c8a016db6f750606d6c.png" title=" 2: As a admin i want to edit data dokter ({namalengkap=21122, idi=12344, spesialis=Dokter Gigi, username=BagasBedah, pass=BagasBedah}) (completed)" width="1034"/>
+                <img src="641553ea0c7ee1350e9d99c43bd8b22ab0037bbbf11d544d65f62061eb96ca5a.png" title=" 3: As a admin i want to edit data dokter ({namalengkap=Bagas, idi=bagas, spesialis=Dokter Gigi, username=BagasBedah, pass=BagasBedah})" width="1034"/>
+                <img src="641553ea0c7ee1350e9d99c43bd8b22ab0037bbbf11d544d65f62061eb96ca5a.png" title=" Given Open page data dokter" width="1034"/>
+                <img src="641553ea0c7ee1350e9d99c43bd8b22ab0037bbbf11d544d65f62061eb96ca5a.png" title=" Open data dokter" width="1034"/>
+                <img src="641553ea0c7ee1350e9d99c43bd8b22ab0037bbbf11d544d65f62061eb96ca5a.png" title=" Given Open page data dokter (completed)" width="1034"/>
+                <img src="641553ea0c7ee1350e9d99c43bd8b22ab0037bbbf11d544d65f62061eb96ca5a.png" title=" And Click Detail dokter data" width="1034"/>
+                <img src="641553ea0c7ee1350e9d99c43bd8b22ab0037bbbf11d544d65f62061eb96ca5a.png" title=" Click button detail" width="1034"/>
+                <img src="96d5cad502688d619cb7004d759863ce11d99488c2699aaacf1b5d83d06688fb.png" title=" Click button detail (completed)" width="1034"/>
+                <img src="96d5cad502688d619cb7004d759863ce11d99488c2699aaacf1b5d83d06688fb.png" title=" And Click Detail dokter data (completed)" width="1034"/>
+                <img src="96d5cad502688d619cb7004d759863ce11d99488c2699aaacf1b5d83d06688fb.png" title=" When Valid data detail dokter" width="1034"/>
+                <img src="92c025e82cffd0f9b02ab7a39a3aefd6bafb4e36a2209e2a013a74ace2b4a0c9.png" title=" Check valid data pasien" width="1034"/>
+                <img src="92c025e82cffd0f9b02ab7a39a3aefd6bafb4e36a2209e2a013a74ace2b4a0c9.png" title=" Check valid data pasien (completed)" width="1034"/>
+                <img src="92c025e82cffd0f9b02ab7a39a3aefd6bafb4e36a2209e2a013a74ace2b4a0c9.png" title=" When Valid data detail dokter (completed)" width="1034"/>
+                <img src="92c025e82cffd0f9b02ab7a39a3aefd6bafb4e36a2209e2a013a74ace2b4a0c9.png" title=" And Click button edit profil" width="1034"/>
+                <img src="a9345e04acd66c59dcc7bbfbc23dbe72c03013de2b63440731d9ce13c84e57a9.png" title=" Click button edit data pasien" width="1034"/>
+                <img src="fbd7f30bee6beb48c2b0178d70e8acf4ed0a10ee90cb661fab3d715d25d996d5.png" title=" Click button edit data pasien (completed)" width="1034"/>
+                <img src="fbd7f30bee6beb48c2b0178d70e8acf4ed0a10ee90cb661fab3d715d25d996d5.png" title=" And Click button edit profil (completed)" width="1034"/>
+                <img src="fbd7f30bee6beb48c2b0178d70e8acf4ed0a10ee90cb661fab3d715d25d996d5.png" title=" Then I input edit &quot;Bagas&quot; &quot;bagas&quot; &quot;Dokter Gigi&quot; &quot;BagasBedah&quot; &quot;BagasBedah&quot; dokter" width="1034"/>
+                <img src="fbd7f30bee6beb48c2b0178d70e8acf4ed0a10ee90cb661fab3d715d25d996d5.png" title=" Input data dokter edit: Bagas, bagas, Dokter Gigi, BagasBedah, BagasBedah" width="1034"/>
+                <img src="41737842826039d58ac0cc2e385da0a5d94278b666b746193eeea5ff4f7cc44f.png" title=" Input data dokter edit: Bagas, bagas, Dokter Gigi, BagasBedah, BagasBedah (completed)" width="1034"/>
+                <img src="41737842826039d58ac0cc2e385da0a5d94278b666b746193eeea5ff4f7cc44f.png" title=" Then I input edit &quot;Bagas&quot; &quot;bagas&quot; &quot;Dokter Gigi&quot; &quot;BagasBedah&quot; &quot;BagasBedah&quot; dokter (completed)" width="1034"/>
+                <img src="41737842826039d58ac0cc2e385da0a5d94278b666b746193eeea5ff4f7cc44f.png" title=" And Click button simpan" width="1034"/>
+                <img src="b2c701911e85b949a1f28dc01a41db8ef5f62f9da110e937241ced207ec8dbfc.png" title=" Click button save" width="1034"/>
+                <img src="07f07e05829c1f6dce8c6527ca432f510622d3a1c33274ab614e06dc4c45ca4d.png" title=" And Valid edit data" width="1034"/>
+                <img src="07f07e05829c1f6dce8c6527ca432f510622d3a1c33274ab614e06dc4c45ca4d.png" title=" Click button back" width="1034"/>
+                <img src="a86a9fd2b98d6809c7a310b2b807e1462b7f6d45a7688c9801fe65ac0b826d55.png" title=" Click button back (completed)" width="1034"/>
+                <img src="a86a9fd2b98d6809c7a310b2b807e1462b7f6d45a7688c9801fe65ac0b826d55.png" title=" Check valid data pasien" width="1034"/>
+                <img src="48ad4c986b24301531d60832b8cda85f617bc9330fcc21571779a3af3145650b.png" title=" Check valid data pasien (completed)" width="1034"/>
+                <img src="48ad4c986b24301531d60832b8cda85f617bc9330fcc21571779a3af3145650b.png" title=" And Valid edit data (completed)" width="1034"/>
+                <img src="48ad4c986b24301531d60832b8cda85f617bc9330fcc21571779a3af3145650b.png" title=" 3: As a admin i want to edit data dokter ({namalengkap=Bagas, idi=bagas, spesialis=Dokter Gigi, username=BagasBedah, pass=BagasBedah}) (completed)" width="1034"/>
+                <img src="641553ea0c7ee1350e9d99c43bd8b22ab0037bbbf11d544d65f62061eb96ca5a.png" title=" 4: As a admin i want to edit data dokter ({namalengkap=Bagas, idi=12344, spesialis=00990112122, username=BagasBedah, pass=BagasBedah})" width="1034"/>
+                <img src="641553ea0c7ee1350e9d99c43bd8b22ab0037bbbf11d544d65f62061eb96ca5a.png" title=" Given Open page data dokter" width="1034"/>
+                <img src="641553ea0c7ee1350e9d99c43bd8b22ab0037bbbf11d544d65f62061eb96ca5a.png" title=" Open data dokter" width="1034"/>
+                <img src="641553ea0c7ee1350e9d99c43bd8b22ab0037bbbf11d544d65f62061eb96ca5a.png" title=" Given Open page data dokter (completed)" width="1034"/>
+                <img src="641553ea0c7ee1350e9d99c43bd8b22ab0037bbbf11d544d65f62061eb96ca5a.png" title=" And Click Detail dokter data" width="1034"/>
+                <img src="0ff02c5be53abaa9ae8a64b94d7c0681ada2738123660f3617718c8448826fde.png" title=" Click button detail" width="1034"/>
+                <img src="5a99056ecca920ddecc4ace6a7ef915c4a703b07e9892531419b3c4d0ef51724.png" title=" Click button detail (completed)" width="1034"/>
+                <img src="5a99056ecca920ddecc4ace6a7ef915c4a703b07e9892531419b3c4d0ef51724.png" title=" And Click Detail dokter data (completed)" width="1034"/>
+                <img src="5a99056ecca920ddecc4ace6a7ef915c4a703b07e9892531419b3c4d0ef51724.png" title=" When Valid data detail dokter" width="1034"/>
+                <img src="fc654d30df96a6de35e9b150cbce25f69fb882ce03b50ca2659bb0801dd4427e.png" title=" Check valid data pasien" width="1034"/>
+                <img src="2a11748636f2e986b3d9ff826aa049513c191c0858ed7f0c34777ead2beb55a7.png" title=" Check valid data pasien (completed)" width="1034"/>
+                <img src="2a11748636f2e986b3d9ff826aa049513c191c0858ed7f0c34777ead2beb55a7.png" title=" When Valid data detail dokter (completed)" width="1034"/>
+                <img src="2a11748636f2e986b3d9ff826aa049513c191c0858ed7f0c34777ead2beb55a7.png" title=" And Click button edit profil" width="1034"/>
+                <img src="2a11748636f2e986b3d9ff826aa049513c191c0858ed7f0c34777ead2beb55a7.png" title=" Click button edit data pasien" width="1034"/>
+                <img src="21ef4ac0b70d874431d0602a9dc7d17ab9898baaca045fbda36f1f83cc5e1f39.png" title=" Click button edit data pasien (completed)" width="1034"/>
+                <img src="21ef4ac0b70d874431d0602a9dc7d17ab9898baaca045fbda36f1f83cc5e1f39.png" title=" And Click button edit profil (completed)" width="1034"/>
+                <img src="21ef4ac0b70d874431d0602a9dc7d17ab9898baaca045fbda36f1f83cc5e1f39.png" title=" Then I input edit &quot;Bagas&quot; &quot;12344&quot; &quot;00990112122&quot; &quot;BagasBedah&quot; &quot;BagasBedah&quot; dokter" width="1034"/>
+                <img src="21ef4ac0b70d874431d0602a9dc7d17ab9898baaca045fbda36f1f83cc5e1f39.png" title=" Input data dokter edit: Bagas, 12344, 00990112122, BagasBedah, BagasBedah" width="1034"/>
+                <img src="51fcfb5f3493f33f8e80ba88988c4a37b611f3ca55e1bf806236a68db46ddc80.png" title=" Input data dokter edit: Bagas, 12344, 00990112122, BagasBedah, BagasBedah (completed)" width="1034"/>
+                <img src="51fcfb5f3493f33f8e80ba88988c4a37b611f3ca55e1bf806236a68db46ddc80.png" title=" Then I input edit &quot;Bagas&quot; &quot;12344&quot; &quot;00990112122&quot; &quot;BagasBedah&quot; &quot;BagasBedah&quot; dokter (completed)" width="1034"/>
+                <img src="51fcfb5f3493f33f8e80ba88988c4a37b611f3ca55e1bf806236a68db46ddc80.png" title=" And Click button simpan" width="1034"/>
+                <img src="2c6fe40939a96f1b77f39f8502ba1686491390d3b8bf295859d4d37e580a8bfd.png" title=" Click button save" width="1034"/>
+                <img src="252885d5b2460eea51b91e3c43712290af93dc30edcd040acaea7f3df72e4b66.png" title=" Click button save (completed)" width="1034"/>
+                <img src="14af0d85519fcaeeb4bba0ff3ec75c87bf55203042632c3c7b48e74cd7f9a065.png" title=" And Valid edit data" width="1034"/>
+                <img src="14af0d85519fcaeeb4bba0ff3ec75c87bf55203042632c3c7b48e74cd7f9a065.png" title=" Click button back" width="1034"/>
+                <img src="257ba893b5ad405218810435bf16a4906b378268b14bde87a8f9e86a86a34518.png" title=" Click button back (completed)" width="1034"/>
+                <img src="8a9c93bf16fb06d36a8f7f6c82d0d9f3661c36ddb9931cb1364091afdb38eb7b.png" title=" Check valid data pasien" width="1034"/>
+                <img src="8a9c93bf16fb06d36a8f7f6c82d0d9f3661c36ddb9931cb1364091afdb38eb7b.png" title=" Check valid data pasien (completed)" width="1034"/>
+                <img src="8a9c93bf16fb06d36a8f7f6c82d0d9f3661c36ddb9931cb1364091afdb38eb7b.png" title=" And Valid edit data (completed)" width="1034"/>
+                <img src="8a9c93bf16fb06d36a8f7f6c82d0d9f3661c36ddb9931cb1364091afdb38eb7b.png" title=" 4: As a admin i want to edit data dokter ({namalengkap=Bagas, idi=12344, spesialis=00990112122, username=BagasBedah, pass=BagasBedah}) (completed)" width="1034"/>
+                <img src="34e9dbdcba3bc7abcc0fa8af48bc3d881f9aa0d3c83530fdb108ced0cf2b67fd.png" title=" 5: As a admin i want to edit data dokter ({namalengkap=Bagas, idi=12344, spesialis=Dokter Gigi, username=*Y*(^21333, pass=BagasBedah})" width="1034"/>
+                <img src="34e9dbdcba3bc7abcc0fa8af48bc3d881f9aa0d3c83530fdb108ced0cf2b67fd.png" title=" Given Open page data dokter" width="1034"/>
+                <img src="34e9dbdcba3bc7abcc0fa8af48bc3d881f9aa0d3c83530fdb108ced0cf2b67fd.png" title=" Open data dokter" width="1034"/>
+                <img src="34e9dbdcba3bc7abcc0fa8af48bc3d881f9aa0d3c83530fdb108ced0cf2b67fd.png" title=" Given Open page data dokter (completed)" width="1034"/>
+                <img src="34e9dbdcba3bc7abcc0fa8af48bc3d881f9aa0d3c83530fdb108ced0cf2b67fd.png" title=" And Click Detail dokter data" width="1034"/>
+                <img src="34e9dbdcba3bc7abcc0fa8af48bc3d881f9aa0d3c83530fdb108ced0cf2b67fd.png" title=" Click button detail" width="1034"/>
+                <img src="f6e04f72d1cbfc7405baa2226fea69bcc780169bd88640e078c342063b5cb669.png" title=" Click button detail (completed)" width="1034"/>
+                <img src="f6e04f72d1cbfc7405baa2226fea69bcc780169bd88640e078c342063b5cb669.png" title=" And Click Detail dokter data (completed)" width="1034"/>
+                <img src="f6e04f72d1cbfc7405baa2226fea69bcc780169bd88640e078c342063b5cb669.png" title=" When Valid data detail dokter" width="1034"/>
+                <img src="f6e04f72d1cbfc7405baa2226fea69bcc780169bd88640e078c342063b5cb669.png" title=" Check valid data pasien" width="1034"/>
+                <img src="f6e04f72d1cbfc7405baa2226fea69bcc780169bd88640e078c342063b5cb669.png" title=" Check valid data pasien (completed)" width="1034"/>
+                <img src="f6e04f72d1cbfc7405baa2226fea69bcc780169bd88640e078c342063b5cb669.png" title=" When Valid data detail dokter (completed)" width="1034"/>
+                <img src="f6e04f72d1cbfc7405baa2226fea69bcc780169bd88640e078c342063b5cb669.png" title=" And Click button edit profil" width="1034"/>
+                <img src="f6e04f72d1cbfc7405baa2226fea69bcc780169bd88640e078c342063b5cb669.png" title=" Click button edit data pasien" width="1034"/>
+                <img src="cf07b051a2924f9f42c41cab521e56af565b208db3448c86ac259c4bad2828c6.png" title=" Click button edit data pasien (completed)" width="1034"/>
+                <img src="cf07b051a2924f9f42c41cab521e56af565b208db3448c86ac259c4bad2828c6.png" title=" And Click button edit profil (completed)" width="1034"/>
+                <img src="cf07b051a2924f9f42c41cab521e56af565b208db3448c86ac259c4bad2828c6.png" title=" Then I input edit &quot;Bagas&quot; &quot;12344&quot; &quot;Dokter Gigi&quot; &quot;*Y*(^21333&quot; &quot;BagasBedah&quot; dokter" width="1034"/>
+                <img src="1601e5fb9f8f38ca54ac53053088788c7bb844a11fbc3594ec677cd03f042809.png" title=" Input data dokter edit: Bagas, 12344, Dokter Gigi, *Y*(^21333, BagasBedah" width="1034"/>
+                <img src="544bcbc478e15d16842411177daa94297a346a5adfb95a8cd7b78f73c7700575.png" title=" Input data dokter edit: Bagas, 12344, Dokter Gigi, *Y*(^21333, BagasBedah (completed)" width="1034"/>
+                <img src="544bcbc478e15d16842411177daa94297a346a5adfb95a8cd7b78f73c7700575.png" title=" Then I input edit &quot;Bagas&quot; &quot;12344&quot; &quot;Dokter Gigi&quot; &quot;*Y*(^21333&quot; &quot;BagasBedah&quot; dokter (completed)" width="1034"/>
+                <img src="544bcbc478e15d16842411177daa94297a346a5adfb95a8cd7b78f73c7700575.png" title=" And Click button simpan" width="1034"/>
+                <img src="49d28f5b1090a6bada04c4a7bdbb88683c6390359148565a2321bb0e8bb818ce.png" title=" Click button save" width="1034"/>
+                <img src="02deaf7a2b2589e2fe97e3f515bdfc5d41af322d1843f2840e5d12786ab9b59a.png" title=" And Valid edit data" width="1034"/>
+                <img src="4a37b95b877c3ac45e84d83d5e436eea1e3af52df465c7b7563046719f5cc5e4.png" title=" Click button back" width="1034"/>
+                <img src="7df251c831c91e12ac405f1d670f5a6ca1ea11714dc3c1eaf1009f4877961dfc.png" title=" Click button back (completed)" width="1034"/>
+                <img src="f4d5fa2177c7242b57315c2d94d286d9f681f02ff1a04b1d6ca475fe94e93845.png" title=" Check valid data pasien" width="1034"/>
+                <img src="ba5c7dc863739b045b1d71690d6b309578ebf33ce179e49ea46d494734d246c7.png" title=" Check valid data pasien (completed)" width="1034"/>
+                <img src="ba5c7dc863739b045b1d71690d6b309578ebf33ce179e49ea46d494734d246c7.png" title=" And Valid edit data (completed)" width="1034"/>
+                <img src="ba5c7dc863739b045b1d71690d6b309578ebf33ce179e49ea46d494734d246c7.png" title=" 5: As a admin i want to edit data dokter ({namalengkap=Bagas, idi=12344, spesialis=Dokter Gigi, username=*Y*(^21333, pass=BagasBedah}) (completed)" width="1034"/>
+                <img src="01660ea4547b3d7b618cbe1bb89ecdd1fcccc76950e0f42fe9f8f4a186e7f0d9.png" title=" 6: As a admin i want to edit data dokter ({namalengkap=Bagas, idi=12344, spesialis=Dokter Gigi, username=BagasBedah, pass=*Y*(^21333})" width="1034"/>
+                <img src="01660ea4547b3d7b618cbe1bb89ecdd1fcccc76950e0f42fe9f8f4a186e7f0d9.png" title=" Given Open page data dokter" width="1034"/>
+                <img src="01660ea4547b3d7b618cbe1bb89ecdd1fcccc76950e0f42fe9f8f4a186e7f0d9.png" title=" Open data dokter" width="1034"/>
+                <img src="01660ea4547b3d7b618cbe1bb89ecdd1fcccc76950e0f42fe9f8f4a186e7f0d9.png" title=" Given Open page data dokter (completed)" width="1034"/>
+                <img src="01660ea4547b3d7b618cbe1bb89ecdd1fcccc76950e0f42fe9f8f4a186e7f0d9.png" title=" And Click Detail dokter data" width="1034"/>
+                <img src="01660ea4547b3d7b618cbe1bb89ecdd1fcccc76950e0f42fe9f8f4a186e7f0d9.png" title=" Click button detail" width="1034"/>
+                <img src="1581ebdf0b4fba89ae79251e30642003a25fae0d366490aeb4bb97504f804e57.png" title=" Click button detail (completed)" width="1034"/>
+                <img src="1581ebdf0b4fba89ae79251e30642003a25fae0d366490aeb4bb97504f804e57.png" title=" And Click Detail dokter data (completed)" width="1034"/>
+                <img src="1581ebdf0b4fba89ae79251e30642003a25fae0d366490aeb4bb97504f804e57.png" title=" When Valid data detail dokter" width="1034"/>
+                <img src="8f3d5867600d4a85a781d8cab90c17848253ba963ebd5cda702128299a14ef56.png" title=" Check valid data pasien" width="1034"/>
+                <img src="8f3d5867600d4a85a781d8cab90c17848253ba963ebd5cda702128299a14ef56.png" title=" Check valid data pasien (completed)" width="1034"/>
+                <img src="8f3d5867600d4a85a781d8cab90c17848253ba963ebd5cda702128299a14ef56.png" title=" When Valid data detail dokter (completed)" width="1034"/>
+                <img src="8f3d5867600d4a85a781d8cab90c17848253ba963ebd5cda702128299a14ef56.png" title=" And Click button edit profil" width="1034"/>
+                <img src="8f3d5867600d4a85a781d8cab90c17848253ba963ebd5cda702128299a14ef56.png" title=" Click button edit data pasien" width="1034"/>
+                <img src="0c9f1636db6ad098ae105d73c31f6c7c9f9212c2ba83e2a6d3cb8cb95991d158.png" title=" Click button edit data pasien (completed)" width="1034"/>
+                <img src="0c9f1636db6ad098ae105d73c31f6c7c9f9212c2ba83e2a6d3cb8cb95991d158.png" title=" And Click button edit profil (completed)" width="1034"/>
+                <img src="0c9f1636db6ad098ae105d73c31f6c7c9f9212c2ba83e2a6d3cb8cb95991d158.png" title=" Then I input edit &quot;Bagas&quot; &quot;12344&quot; &quot;Dokter Gigi&quot; &quot;BagasBedah&quot; &quot;*Y*(^21333&quot; dokter" width="1034"/>
+                <img src="0c9f1636db6ad098ae105d73c31f6c7c9f9212c2ba83e2a6d3cb8cb95991d158.png" title=" Input data dokter edit: Bagas, 12344, Dokter Gigi, BagasBedah, *Y*(^21333" width="1034"/>
+                <img src="d85e9b8976e4c52385690b90646c6acce54694201b9063adae509ce8269229be.png" title=" Input data dokter edit: Bagas, 12344, Dokter Gigi, BagasBedah, *Y*(^21333 (completed)" width="1034"/>
+                <img src="d85e9b8976e4c52385690b90646c6acce54694201b9063adae509ce8269229be.png" title=" Then I input edit &quot;Bagas&quot; &quot;12344&quot; &quot;Dokter Gigi&quot; &quot;BagasBedah&quot; &quot;*Y*(^21333&quot; dokter (completed)" width="1034"/>
+                <img src="d85e9b8976e4c52385690b90646c6acce54694201b9063adae509ce8269229be.png" title=" And Click button simpan" width="1034"/>
+                <img src="d85e9b8976e4c52385690b90646c6acce54694201b9063adae509ce8269229be.png" title=" Click button save" width="1034"/>
+                <img src="e6abdb897139f5ac623629605db9e17b8fce111dfde3610c62360929aff5f809.png" title=" And Valid edit data" width="1034"/>
+                <img src="e6abdb897139f5ac623629605db9e17b8fce111dfde3610c62360929aff5f809.png" title=" Click button back" width="1034"/>
+                <img src="4ff575ab2187b4486fdac9770be9b6799673f9d23637fa28f6fa3857a4fa19af.png" title=" Click button back (completed)" width="1034"/>
+                <img src="4ff575ab2187b4486fdac9770be9b6799673f9d23637fa28f6fa3857a4fa19af.png" title=" Check valid data pasien" width="1034"/>
+                <img src="b3ad1204be625d38135506876df6419307f7bfbb84408268d1b29b6f9de68deb.png" title=" Check valid data pasien (completed)" width="1034"/>
+                <img src="b3ad1204be625d38135506876df6419307f7bfbb84408268d1b29b6f9de68deb.png" title=" And Valid edit data (completed)" width="1034"/>
+                <img src="b3ad1204be625d38135506876df6419307f7bfbb84408268d1b29b6f9de68deb.png" title=" 6: As a admin i want to edit data dokter ({namalengkap=Bagas, idi=12344, spesialis=Dokter Gigi, username=BagasBedah, pass=*Y*(^21333}) (completed): <span class='success-color'>SUCCESS</span>" width="1034"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 3.2.1</span>
+</div>
+</body>
+</html>
