@@ -1,4 +1,2 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"Kelola jadwal - admin","As a admin i want to view Manage Schedule","SUCCESS","2022-06-23T20:28:06.2730077+07:00[Asia/Bangkok]","0.0","48.89"
-"Edit Data Dokter - Admin","As a admin i want to edit data dokter","SUCCESS","2022-06-23T20:34:58.2679555+07:00[Asia/Bangkok]","0.0","201.56"
-"Edit Data Pasien - Admin","As a admin i want to edit data pasien","SUCCESS","2022-06-23T20:38:19.8747998+07:00[Asia/Bangkok]","0.0","156.91"
+"Add Data Dokter - Admin","As a admin i want to add data dokter","SUCCESS","2022-06-26T13:46:24.9806168+07:00[Asia/Bangkok]","0.0","179.72"

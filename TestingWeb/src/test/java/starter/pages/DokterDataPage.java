@@ -23,6 +23,9 @@ public class DokterDataPage extends PageObject {
     private By passDokter() {
         return By.xpath("//*[@name=\"password\"]");
     }
+    private By validTextError() {
+        return By.xpath("");
+    }
 
     @Step
     public void inputDataDokter(String namadokter, String idi, String spesialis,  String username, String pass) {
@@ -44,5 +47,9 @@ public class DokterDataPage extends PageObject {
         $(usernameDokter()).sendKeys(username);
         $(passDokter()).sendKeys(pass, Keys.chord(Keys.CONTROL, "a"));
         $(passDokter()).sendKeys(pass);
+    }
+    @Step
+    public boolean validateTextMessegerDokter(String text) {
+        return $(validTextError()).getText().equalsIgnoreCase(text);
     }
 }

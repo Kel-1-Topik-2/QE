@@ -11,9 +11,10 @@ Feature: Edit Data Dokter - Admin
     And Valid edit data
     Examples:
       |namalengkap|idi|spesialis|username|pass|
-      |   21122   |  bagas | 00942534590 |   *Y*(^21333   |   *Y*(^21333  |
-      |   21122   |  12344 | Dokter Gigi |   BagasBedah   |   BagasBedah  |
-      |  Bagas    |  bagas | Dokter Gigi |   BagasBedah   |   BagasBedah  |
-      |  Bagas    | 12344  | 00990112122 |  BagasBedah    |   BagasBedah  |
-      |  Bagas    |  12344 | Dokter Gigi |   *Y*(^21333   |   BagasBedah  |
-      |  Bagas    |  12344 | Dokter Gigi |   BagasBedah   |   *Y*(^21333  |
+      |  Dr.Bagas    |  12344 | Dokter Gigi |   BagasBedah   |   Bagas21     |
+      |     21122    |  bagas |    21122    |   ,.;'[]-==-   |   ,.;'[]-==-  |
+      |     21122    |  12344 | Dokter Gigi |   BagasBedah   |   Bagas21     |
+      |  Dr.Bagas    |  bagas | Dokter Gigi |   BagasBedah   |   Bagas21     |
+      |  Dr.Bagas    | 12344  | 00990112122 |  BagasBedah    |   Bagas21     |
+      |  Dr.Bagas    |  12344 | Dokter Gigi |   ,.;'[]-==-   |   Bagas21     |
+      |  Dr.Bagas    |  12344 | Dokter Gigi |   BagasBedah   |  ,.;'[]-==-   |

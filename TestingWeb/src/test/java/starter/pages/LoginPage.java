@@ -41,11 +41,11 @@ public class LoginPage extends PageObject {
     }
     @Step
     public void inputEmailLogin(String usernameLogin) {
-        $(emailFieldLogin()).type(usernameLogin);
+        $(emailFieldLogin()).sendKeys(usernameLogin);
     }
     @Step
     public void inputPasswordLogin(String passwordLogin) {
-        $(passwordFieldLogin()).type(passwordLogin);
+        $(passwordFieldLogin()).sendKeys(passwordLogin);
     }
     @Step
     public void clickButtonLogin() {

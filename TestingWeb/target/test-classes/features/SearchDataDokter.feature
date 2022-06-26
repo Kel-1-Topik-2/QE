@@ -10,3 +10,4 @@ Feature: Search Data Dokter - Admin
     Examples:
       |namacategory|
       |    Bagas   |
+      |  &%^%^*)%  |

@@ -4,9 +4,9 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import io.cucumber.java.nl.Stel;
 import net.thucydides.core.annotations.Steps;
 import starter.pages.DashboardPage;
+import starter.pages.DokterDataPage;
 import starter.pages.PatientDataPage;
 
 public class PatientDataSteps {
@@ -14,6 +14,8 @@ public class PatientDataSteps {
     PatientDataPage patientDataPage;
     @Steps
     DashboardPage dashboardPage;
+    @Steps
+    DokterDataPage dokterDataPage;
     @Given("Open page dasbord")
     public void openPageDasbord() { dashboardPage.openDashbord();
     }
@@ -26,7 +28,7 @@ public class PatientDataSteps {
     }
     @And("View Patient data")
     public void viewPatientData() throws InterruptedException {
-        Thread.sleep(500);
+        Thread.sleep(1000);
         patientDataPage.validPagePasien();
     }
     @And("Click button tambah data")
@@ -37,7 +39,7 @@ public class PatientDataSteps {
     public void clickDetailPatientData() {
         patientDataPage.clickButtonDetail();
     }
-    @Then("I input {string} {string} {string} {string} {string} patient")
+    @When("I input {string} {string} {string} {string} {string} patient")
     public void iInput(String namalengkap, String nik, String usia, String nomortelepon, String alamat) throws InterruptedException {
         Thread.sleep(500);
         patientDataPage.inputDataPasien(namalengkap, nik, usia, nomortelepon, alamat);
@@ -47,11 +49,12 @@ public class PatientDataSteps {
         Thread.sleep(500);
         patientDataPage.inputDataPasienEdit(namalengkap, nik, usia, nomortelepon, alamat);
     }
+
     @And("I click button jenis kelamin patient")
     public void iClickButtonJenisKelamin() {
         patientDataPage.clickLaki();
     }
-    @And("Click button simpan")
+    @Then("Click button simpan")
     public void clickButtonSimpan() {
         patientDataPage.clickButtonSave();
     }
@@ -87,7 +90,6 @@ public class PatientDataSteps {
     public void clickDeletePatientData() {
         patientDataPage.clickButtonSampah();
     }
-
     @Then("Valid data delete pasien")
     public void validDataDeletePasien() throws InterruptedException {
         Thread.sleep(500);
@@ -114,5 +116,10 @@ public class PatientDataSteps {
     public void validDataCategoryPasien() throws InterruptedException {
         Thread.sleep(500);
         patientDataPage.validPagePasien();
+    }
+    @And("Validate add error messenger {string} Pasien")
+    public void validateAddErrorMessengerPasien(String arg0) throws InterruptedException {
+        Thread.sleep(1000);
+        dokterDataPage.validateTextMessegerDokter(arg0);
     }
 }

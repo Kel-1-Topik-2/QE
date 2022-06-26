@@ -1,7 +1,13 @@
 @SearchPatientData
 Feature: Search Data Pasien - Admin
 
-  Scenario: As a admin i want to delete data pasien
+  Scenario Outline: As a admin i want to search data pasien
     Given Open page data pasien
-    When Click Delete Patient data
-    Then Valid data delete pasien
+    And Click search all category Patient data
+    When Click chose nama
+    And Input data "<namacategory>" category
+    Then Valid data category pasien
+    Examples:
+      |namacategory|
+      |    bagas   |
+      |  &%^%^*)%  |

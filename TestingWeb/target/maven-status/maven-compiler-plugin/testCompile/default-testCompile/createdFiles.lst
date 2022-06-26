@@ -1,5 +1,6 @@
 starter\pages\DokterDataPage.class
 starter\stepdefinitios\DokterDataSteps.class
+starter\stepdefinitios\ArsipJadwalSteps.class
 starter\pages\DashboardPage.class
 CucumberTestSuite.class
 starter\stepdefinitios\PatientDataSteps.class

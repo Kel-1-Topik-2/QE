@@ -65,13 +65,12 @@ public class PatientDataPage extends PageObject {
         return By.xpath("//*[@class=\"MuiGrid-root MuiGrid-container css-if0jla\"]/button");
     }
     private By buttonBack(){
-        return By.xpath("//*[@class=\"MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-1yxmbwk\"]");
+        return By.xpath("//*[@aria-label=\"back\"]");
     }
     @Step
     public void clickButtonTambah() {
         $(buttonTambah()).click();
     }
-
     @Step
     public boolean validPagePasien() {
         return  $(pagePasien()).isDisabled();

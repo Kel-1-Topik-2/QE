@@ -1,1 +1,1 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="0" name="Search Data Dokter - Admin" skipped="0" tests="1" time="13.36" timestamp="2022-06-23 08:40:56"><testcase name="As a admin i want to delete data dokter"/></testsuite>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="0" name="Search Data Dokter - Admin" skipped="0" tests="2" time="19.93" timestamp="2022-06-26 01:58:37"><testcase name="As a admin i want to delete data dokter"/></testsuite>

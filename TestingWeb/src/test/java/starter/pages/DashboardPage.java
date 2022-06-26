@@ -47,6 +47,10 @@ public class DashboardPage extends PageObject {
         openAt("/kelola-jadwal");
     }
     @Step
+    public void openArsipJadwal() {
+        openAt("/arsip-jadwal");
+    }
+    @Step
     public boolean validViewDashbord() {
         return $(viewPageDashbord()).isDisabled();
     }
