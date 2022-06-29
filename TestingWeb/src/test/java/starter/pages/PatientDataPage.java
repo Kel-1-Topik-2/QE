@@ -6,12 +6,11 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 
 public class PatientDataPage extends PageObject {
-
     private By allCategory() {
-        return By.xpath("//*[@id=\"filter\"]/option[1]");
+        return By.xpath("//*[@name=\"filter\"]");
     }
     private By categoryNamaLengkap() {
-        return By.xpath("//*[@id=\"filter\"]/option[3]");
+        return By.xpath("//*[@value=\"nama\"]");
     }
     private By inputCategory() {
         return By.xpath("//*[@class=\"style_containerSearch__3p2Yu\"]/input");
@@ -46,17 +45,23 @@ public class PatientDataPage extends PageObject {
     private By simpan() {
         return By.xpath("//*[@type=\"submit\"]");
     }
-    private By validDataPasien() {
+    private By validData() {
         return By.xpath("//*[@class=\"MuiBox-root css-1ea6u22\"]/div");
+    }
+    private By validAddDataPasien() {
+        return By.xpath("//*[@class=\"style_innerPopup__19-Tx\"]/h3");
+    }
+    private By clickOK() {
+        return By.xpath("//*[@class=\"style_btnCancel__17kdz\"]");
     }
     private By tempatsampah() {
         return By.xpath("//*[@class=\"style_aksi__3Lc-v\"]/img[2]");
     }
     private By deleteYa() {
-        return By.xpath("");
+        return By.xpath("style_btnTrue__1HvCo");
     }
     private By deleteTidak() {
-        return By.xpath("");
+        return By.xpath("//*[@class=\"style_btnCancel__3cOTL\"]");
     }
     private By detail() {
         return By.xpath("//*[@class=\"style_aksi__3Lc-v\"]/img[1]");
@@ -77,7 +82,15 @@ public class PatientDataPage extends PageObject {
     }
     @Step
     public boolean checkValidDataPasien() {
-        return  $(validDataPasien()).isDisabled();
+        return  $(validData()).isDisabled();
+    }
+    @Step
+    public boolean validAddData() {
+        return  $(validAddDataPasien()).isDisabled();
+    }
+    @Step
+    public void buttonClickOK() {
+        $(clickOK()).click();
     }
     @Step
     public void inputDataPasien(String namalengkap, String nik, String usia,  String nomortelepon, String alamat){

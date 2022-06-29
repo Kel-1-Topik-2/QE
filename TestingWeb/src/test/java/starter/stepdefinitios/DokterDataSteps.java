@@ -51,7 +51,9 @@ public class DokterDataSteps {
     @And("Valid data dokter")
     public void validDataDokter() throws InterruptedException {
         Thread.sleep(500);
-        patientDataPage.validPagePasien();
+        patientDataPage.validAddData();
+        Thread.sleep(500);
+        patientDataPage.buttonClickOK();
     }
     @And("Validate add error messenger {string} dokter")
     public void validateAddErrorMessegerDokter(String text) throws InterruptedException {

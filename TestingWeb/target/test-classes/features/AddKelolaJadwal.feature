@@ -14,7 +14,7 @@ Feature: Add Kelola Jadwal - Admin
     And Validate data kelola jadwal
     Examples:
       | tanggal|
-      |21122022|
+      |11102022|
 
   @AddKelolaJadwalRawatBiasa
   Scenario Outline: As a admin i want to Add Manage Schedule Rawat Biasa

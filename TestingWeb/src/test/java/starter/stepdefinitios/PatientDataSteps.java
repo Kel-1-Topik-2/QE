@@ -50,9 +50,13 @@ public class PatientDataSteps {
         patientDataPage.inputDataPasienEdit(namalengkap, nik, usia, nomortelepon, alamat);
     }
 
-    @And("I click button jenis kelamin patient")
+    @And("I click button jenis kelamin laki-laki")
     public void iClickButtonJenisKelamin() {
         patientDataPage.clickLaki();
+    }
+    @And("I click button jenis kelamin perempuan")
+    public void iClickButtonJenisKelaminPerempuan() {
+        patientDataPage.clickPerempuan();
     }
     @Then("Click button simpan")
     public void clickButtonSimpan() {
@@ -61,15 +65,6 @@ public class PatientDataSteps {
     @Then("Pressing the trash image in action")
     public void pressingTheTrashImageIneAction() {
         patientDataPage.clickButtonSampah();
-    }
-    @And("Click button hapus ya")
-    public void clickButtonHapusYa() throws InterruptedException {
-        Thread.sleep(500);
-        patientDataPage.clickButtonDeleteYa();
-    }
-    @And("Click button hapus tidak")
-    public void clickButtonHapusTidak() {
-        patientDataPage.clickButtonDeleteTidak();
     }
     @Then("Valid data detail pasien")
     public void validData() throws InterruptedException {
@@ -83,12 +78,25 @@ public class PatientDataSteps {
     @And("Valid edit data")
     public void validEditData() throws InterruptedException {
         Thread.sleep(500);
-        patientDataPage.clickButtonBack();
+        patientDataPage.validAddData();
+        Thread.sleep(500);
+        patientDataPage.buttonClickOK();
+        Thread.sleep(500);
         patientDataPage.checkValidDataPasien();
     }
     @When("Click Delete Patient data")
     public void clickDeletePatientData() {
         patientDataPage.clickButtonSampah();
+    }
+    @And("Click button hapus ya")
+    public void clickButtonHapusYa() throws InterruptedException {
+        Thread.sleep(500);
+        patientDataPage.clickButtonDeleteYa();
+    }
+    @And("Click button hapus tidak")
+    public void clickButtonHapusTidak() throws InterruptedException {
+        Thread.sleep(500);
+        patientDataPage.clickButtonDeleteTidak();
     }
     @Then("Valid data delete pasien")
     public void validDataDeletePasien() throws InterruptedException {
@@ -98,7 +106,8 @@ public class PatientDataSteps {
     @And("Valid data pasien")
     public void validDataPasien() throws InterruptedException {
         Thread.sleep(500);
-        patientDataPage.checkValidDataPasien();
+        patientDataPage.validAddData();
+        patientDataPage.buttonClickOK();
     }
     @And("Click search all category Patient data")
     public void clickSearchAllCategoryPatientData() {
@@ -119,6 +128,8 @@ public class PatientDataSteps {
     }
     @And("Validate add error messenger {string} Pasien")
     public void validateAddErrorMessengerPasien(String arg0) throws InterruptedException {
+        Thread.sleep(1000);
+        patientDataPage.checkValidDataPasien();
         Thread.sleep(1000);
         dokterDataPage.validateTextMessegerDokter(arg0);
     }

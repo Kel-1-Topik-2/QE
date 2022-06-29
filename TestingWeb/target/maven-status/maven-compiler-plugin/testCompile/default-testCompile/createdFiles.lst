@@ -9,3 +9,4 @@ starter\pages\KelolaJadwalPage.class
 starter\pages\PatientDataPage.class
 starter\pages\LoginPage.class
 starter\stepdefinitios\LoginSteps.class
+starter\pages\ArsipJadwalPage.class

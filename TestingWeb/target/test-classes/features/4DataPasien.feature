@@ -14,11 +14,11 @@
 #    Then Valid data detail pasien
 #
 #  @AddPatientData
-#  Scenario Outline: As a admin i want to add data pasien
+#  Scenario Outline: As a admin i want to add data pasien (JK Laki-Laki)
 #    Given Open page data pasien
 #    When Click button tambah data
 #    Then I input "<namalengkap>" "<nik>" "<usia>" "<nomortelepon>" "<alamat>" patient
-#    And I click button jenis kelamin patient
+#    And I click button jenis kelamin laki-laki
 #    And Click button simpan
 #    And Valid data pasien
 #    Examples:
@@ -42,13 +42,13 @@
 #      |   Bagas   |  1234479680 | 20 |   01294657612   |   perumahan  |
 #
 #  @EditPatientData
-#  Scenario Outline: As a admin i want to edit data pasien
+#  Scenario Outline: As a admin i want to edit data pasien (JK Perempuan)
 #    Given Open page data pasien
 #    And Click Detail Patient data
 #    When Valid data detail pasien
 #    And Click button edit profil
 #    Then I input edit "<namalengkap>" "<nik>" "<usia>" "<nomortelepon>" "<alamat>" patient
-#    And I click button jenis kelamin patient
+#    And I click button jenis kelamin perempuan
 #    And Click button simpan
 #    And Valid edit data
 #    Examples:

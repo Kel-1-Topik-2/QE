@@ -11,13 +11,13 @@ Feature: Add Data Dokter - Admin
     Examples:
       |namalengkap|idi|spesialis|username|pass|text|
       |   Bagas   |  12344 | Dokter Gigi |   BagasBedah   |   Bagas12  | |
-      |           |        |             |                |            | |
-      |           |  12344 | Dokter Gigi |   BagasBedah   |   Bagas12  | |
-      |  Bagas    |        | Dokter Gigi |   BagasBedah   |   Bagas12  | |
-      |  Bagas    | 12344  |             |  BagasBedah    |   Bagas12  | |
-      |  Bagas    |  12344 | Dokter Gigi |                |   Bagas12  | |
-      |  Bagas    |  12344 | Dokter Gigi |   BagasBedah   |            | |
-      |   12345   |  12344 | Dokter Gigi |   BagasBedah   |   Bagas12  | |
-      |   Bagas   |  Bagas | Dokter Gigi |   BagasBedah   |   Bagas12  | |
-      |   Bagas   |  12344 | 11223344556 |   BagasBedah   |   Bagas12  | |
+#      |           |        |             |                |            | |
+#      |           |  12344 | Dokter Gigi |   BagasBedah   |   Bagas12  | |
+#      |  Bagas    |        | Dokter Gigi |   BagasBedah   |   Bagas12  | |
+#      |  Bagas    | 12344  |             |  BagasBedah    |   Bagas12  | |
+#      |  Bagas    |  12344 | Dokter Gigi |                |   Bagas12  | |
+#      |  Bagas    |  12344 | Dokter Gigi |   BagasBedah   |            | |
+#      |   12345   |  12344 | Dokter Gigi |   BagasBedah   |   Bagas12  | |
+#      |   Bagas   |  Bagas | Dokter Gigi |   BagasBedah   |   Bagas12  | |
+#      |   Bagas   |  12344 | 11223344556 |   BagasBedah   |   Bagas12  | |
 

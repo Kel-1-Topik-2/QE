@@ -5,6 +5,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import net.thucydides.core.annotations.Steps;
+import starter.pages.ArsipJadwalPage;
 import starter.pages.DashboardPage;
 import starter.pages.PatientDataPage;
 
@@ -13,6 +14,8 @@ public class ArsipJadwalSteps {
     DashboardPage dashboardPage;
     @Steps
     PatientDataPage patientDataPage;
+    @Steps
+    ArsipJadwalPage arsipJadwalPage;
     @When("Click button archive")
     public void clickButtonArchive() {
         dashboardPage.clickButtonArsipJadwal();
@@ -32,5 +35,9 @@ public class ArsipJadwalSteps {
     @Then("Valid data category archive")
     public void validDataCategoryArchive() {
         patientDataPage.validPagePasien();
+    }
+    @When("Click chose nama pasien")
+    public void clickChoseNamaPasien() {
+        arsipJadwalPage.clickButtonChooseCategoryNamaOnArsip();
     }
 }

@@ -6,27 +6,31 @@ import org.openqa.selenium.By;
 
 public class LoginPage extends PageObject {
     private By emailFieldLogin() {
-        return By.xpath("//label[contains(text(),'Email')]/following-sibling::input");
+        return By.xpath("//*[@name=\"username\"]");
     }
     private By passwordFieldLogin() {
-        return By.xpath("//label[contains(text(),'Password')]/following-sibling::input");
+        return By.xpath("//*[@name=\"password\"]");
     }
     private By buttonLogin() {
-        return By.xpath("//*[@class=\"text-center\"]/button");
+        return By.xpath("//*[@type=\"submit\"]");
     }
     private By errorMessager() {
-        return By.xpath("//*[@class=\"v-card__text\"]/div/div/div");
+        return By.xpath("//*[@class=\"style_containerForm__N7MYO\"]");
     }
     private By pilihRole() {
-        return By.xpath("");
+        return By.xpath("//*[@name=\"role\"]");
     }
     private By roleAdmin() {
-        return By.xpath("");
+        return By.xpath("//*[@value=\"admin\"]");
     }
     private By roleDokter() {
-        return By.xpath("");
+        return By.xpath("//*[@value=\"dokter\"]");
     }
 
+    @Step
+    public void openLogin() {
+        openAt("/login");
+    }
     @Step
     public void clickButtonRole() {
         $(pilihRole()).click();

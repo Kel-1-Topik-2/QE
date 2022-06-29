@@ -31,10 +31,6 @@ public class DashboardPage extends PageObject {
         open();
     }
     @Step
-    public void openLogin() {
-        openAt("/login");
-    }
-    @Step
     public void openDataPasien() {
         openAt("/data-pasien");
     }
