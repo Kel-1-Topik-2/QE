@@ -10,7 +10,7 @@ Feature: Edit Data Dokter - Admin
     And Click button simpan
     And Valid edit data
     Examples:
-      |namalengkap|idi|spesialis|username|pass|
+      |  namalengkap |   idi  |  spesialis  |     username   |    pass       |
       |  Dr.Bagas    |  12344 | Dokter Gigi |   BagasBedah   |   Bagas21     |
       |     21122    |  bagas |    21122    |   ,.;'[]-==-   |   ,.;'[]-==-  |
       |     21122    |  12344 | Dokter Gigi |   BagasBedah   |   Bagas21     |

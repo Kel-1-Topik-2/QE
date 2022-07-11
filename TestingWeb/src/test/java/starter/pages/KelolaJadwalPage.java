@@ -6,7 +6,7 @@ import org.openqa.selenium.By;
 
 public class KelolaJadwalPage extends PageObject {
     private By aksiPilih() {
-        return By.xpath("//*[@class=\"style_container__2YNFk\"]/table/tbody/tr[3]/td[5]/div/img");
+        return By.xpath("//*[@class=\"style_container__2YNFk\"]/table/tbody/tr[1]/td[5]/div/img");
     }
     private By save() {
         return By.xpath("//*[@type=\"submit\"]");
@@ -21,10 +21,17 @@ public class KelolaJadwalPage extends PageObject {
         return By.xpath("//*[@class=\"style_input_container__2eLrm\"]/select");
     }
     private By rawatBiasa() {
-        return By.xpath("//*[@value=\"Rawat_biasa\"]");
+        return By.xpath("//*[@value=\"Perawatan Biasa\"]");
     }
     private By rawatJalan() {
-        return By.xpath("//*[@value=\"Rawat_biasa\"]");
+        return By.xpath("//*[@value=\"Rawat Jalan\"]");
+    }
+    private By validError() {
+        return By.xpath("//*[@class=\"style_form_container__WInu1\"]/form");
+    }
+    @Step
+    public boolean validateErrorKelolaJadwal() {
+        return $(validError()).isDisabled();
     }
     @Step
     public void buttonPilihPasien() {

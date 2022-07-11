@@ -56,7 +56,12 @@ public class KelolaJadwalSteps {
     }
 
     @And("Validate data kelola jadwal")
-    public void validateDataKelolaJadwal() {
+    public void validateDataKelolaJadwal() throws InterruptedException {
+        Thread.sleep(1000);
+        patientDataPage.validAddData();
+        Thread.sleep(1000);
+        patientDataPage.buttonClickOK();
+        Thread.sleep(1000);
         patientDataPage.validPagePasien();
     }
 
@@ -70,4 +75,8 @@ public class KelolaJadwalSteps {
         kelolaJadwalPage.buttonRawatBiasa();
     }
 
+    @And("Validate data error kelola jadwal")
+    public void validateDataErrorKelolaJadwal() {
+        kelolaJadwalPage.validateErrorKelolaJadwal();
+    }
 }

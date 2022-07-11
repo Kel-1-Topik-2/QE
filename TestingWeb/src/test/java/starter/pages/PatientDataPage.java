@@ -22,7 +22,7 @@ public class PatientDataPage extends PageObject {
         return By.xpath("//*[@type=\"submit\"]");
     }
     private By fldNama() {
-        return By.xpath("//*[@name=\"nama\"]");
+        return By.xpath("//*[@name=\"namapasien\"]");
     }
     private By fldNomor() {
         return By.xpath("//*[@name=\"telp\"]");
@@ -31,16 +31,16 @@ public class PatientDataPage extends PageObject {
         return By.xpath("//*[@name=\"nik\"]");
     }
     private By fldUsia() {
-        return By.xpath("//*[@name=\"usia\"]");
+        return By.xpath("//*[@name=\"umur\"]");
     }
     private By fldAlamat() {
         return By.xpath("//*[@name=\"alamat\"]");
     }
     private By jLaki() {
-        return By.xpath("//*[@class=\"MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 css-isbt42\"]/div[5]/div/div/label[1]/span");
+        return By.xpath("//*[@class=\"MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 css-isbt42\"]/div[5]/div/div/label[1]/span[1]");
     }
     private By jPerempuan() {
-        return By.xpath("//*[@class=\"MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 css-isbt42\"]/div[5]/div/div/label[2]/span");
+        return By.xpath("//*[@class=\"MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 css-isbt42\"]/div[5]/div/div/label[2]/span[1]");
     }
     private By simpan() {
         return By.xpath("//*[@type=\"submit\"]");
@@ -49,7 +49,7 @@ public class PatientDataPage extends PageObject {
         return By.xpath("//*[@class=\"MuiBox-root css-1ea6u22\"]/div");
     }
     private By validAddDataPasien() {
-        return By.xpath("//*[@class=\"style_innerPopup__19-Tx\"]/h3");
+        return By.xpath("//*[@class=\"style_innerPopup__19-Tx\"]");
     }
     private By clickOK() {
         return By.xpath("//*[@class=\"style_btnCancel__17kdz\"]");
@@ -58,7 +58,7 @@ public class PatientDataPage extends PageObject {
         return By.xpath("//*[@class=\"style_aksi__3Lc-v\"]/img[2]");
     }
     private By deleteYa() {
-        return By.xpath("style_btnTrue__1HvCo");
+        return By.xpath("//*[@class=\"style_btnTrue__1HvCo\"]");
     }
     private By deleteTidak() {
         return By.xpath("//*[@class=\"style_btnCancel__3cOTL\"]");

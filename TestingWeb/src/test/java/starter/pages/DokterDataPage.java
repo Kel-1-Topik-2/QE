@@ -16,10 +16,8 @@ public class DokterDataPage extends PageObject {
         return By.xpath("//*[@name=\"spesialis\"]");
     }
     private By usernameDokter() {
-        return By.xpath("//*[@class=\"MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 css-isbt42\"]/div[4]/div/div/input");
+        return By.xpath("//*[@name=\"username\"]");
     }
-    //*[@name="username"]
-    //*[@name="userName"]
     private By passDokter() {
         return By.xpath("//*[@name=\"password\"]");
     }
