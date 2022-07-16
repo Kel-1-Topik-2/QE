@@ -1,0 +1,4 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Login - Admin","As a admin I login - kosong","SUCCESS","2022-07-16T12:20:03.6483031+07:00[Asia/Bangkok]","0.0","34.49"
+"Login - Admin","As a admin I login - invalid","SUCCESS","2022-07-16T12:20:38.176839+07:00[Asia/Bangkok]","0.0","42.31"
+"Login - Admin","As a admin I login - Valid","SUCCESS","2022-07-16T12:21:20.4997008+07:00[Asia/Bangkok]","0.0","17.08"

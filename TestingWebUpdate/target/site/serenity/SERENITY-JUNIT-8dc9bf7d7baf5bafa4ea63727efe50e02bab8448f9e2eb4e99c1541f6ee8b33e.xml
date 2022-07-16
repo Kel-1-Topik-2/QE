@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="1" name="View Kelola Jadwal - Admin" skipped="0" tests="1" time="23.2" timestamp="2022-07-16 12:53:39"><testcase name="As a admin i want to View Manage Schedule"><failure message="Expected enabled element was not enabled&#10;Build info: version: '4.1.4', revision: '535d840ee2'&#10;System info: host: 'LAPTOP-SQP5LMI4', ip: '192.168.100.42', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15'&#10;Driver info: driver.version: unknown" type="net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException">Expected enabled element was not enabled
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'LAPTOP-SQP5LMI4', ip: '192.168.100.42', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15'
+Driver info: driver.version: unknown</failure><system-err>Expected enabled element was not enabled
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'LAPTOP-SQP5LMI4', ip: '192.168.100.42', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15'
+Driver info: driver.version: unknown&#13;
+TestingWeb@1.0-SNAPSHOT/starter.pages.DashboardPage.clickButtonKelolaJadwal(DashboardPage.java:73)&#13;
+TestingWeb@1.0-SNAPSHOT/starter.stepdefinitios.KelolaJadwalSteps.clickButtonManageSchedule(KelolaJadwalSteps.java:25)&#13;
+✽.Click button manage schedule(file:///C:/Alterra/Web/TestingWeb/src/test/resources/features/ViewKelolaJadwal.feature:10)&#13;
+</system-err></testcase></testsuite>

@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="0" name="Delete Data Dokter - Admin" skipped="0" tests="2" time="61.32" timestamp="2022-07-16 12:37:43"><testcase name="As a admin i want to delete data dokter - No"/><testcase name="As a admin i want to delete data dokter - Yes"/></testsuite>

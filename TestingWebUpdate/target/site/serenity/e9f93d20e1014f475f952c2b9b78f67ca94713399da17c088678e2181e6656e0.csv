@@ -1,0 +1,5 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Add Kelola Jadwal - Admin","As a admin i want to Add Manage Schedule Rawat Jalan","SUCCESS","2022-07-16T12:34:52.8511881+07:00[Asia/Bangkok]","0.0","48.33"
+"Add Kelola Jadwal - Admin","As a admin i want to Add Manage Schedule Rawat Biasa - tidak ada tanggal","FAILURE","2022-07-16T12:35:45.3969286+07:00[Asia/Bangkok]","0.0","45.34"
+"Add Kelola Jadwal - Admin","As a admin i want to Add Manage Schedule Rawat Biasa - tidak ada perawat","SUCCESS","2022-07-16T12:36:30.7674858+07:00[Asia/Bangkok]","0.0","36.68"
+"Add Kelola Jadwal - Admin","As a admin i want to Add Manage Schedule Rawat Biasa - tidak ada perawat & tanggal","SUCCESS","2022-07-16T12:37:07.4529982+07:00[Asia/Bangkok]","0.0","36.51"

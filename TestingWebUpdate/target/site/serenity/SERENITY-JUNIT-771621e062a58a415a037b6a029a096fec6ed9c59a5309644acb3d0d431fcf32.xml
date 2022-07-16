@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="7" name="Add Data Dokter - Admin" skipped="0" tests="14" time="367.53" timestamp="2022-07-16 12:22:38"><testcase name="As a admin i want to add data dokter - Valid"/><testcase name="As a admin i want to add data dokter - Kosong"><failure message="Expected enabled element was not enabled&#10;Build info: version: '4.1.4', revision: '535d840ee2'&#10;System info: host: 'LAPTOP-SQP5LMI4', ip: '192.168.100.42', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15'&#10;Driver info: driver.version: unknown" type="net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException">Expected enabled element was not enabled
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'LAPTOP-SQP5LMI4', ip: '192.168.100.42', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15'
+Driver info: driver.version: unknown</failure><system-err>Expected enabled element was not enabled
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'LAPTOP-SQP5LMI4', ip: '192.168.100.42', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15'
+Driver info: driver.version: unknown&#13;
+TestingWeb@1.0-SNAPSHOT/starter.pages.DashboardPage.clickButtonDataDokter(DashboardPage.java:69)&#13;
+TestingWeb@1.0-SNAPSHOT/starter.stepdefinitios.DokterDataSteps.clickButtonDataDokter(DokterDataSteps.java:22)&#13;
+✽.Click button data dokter(file:///C:/Alterra/Web/TestingWeb/src/test/resources/features/AddDataDokter.feature:28)&#13;
+</system-err></testcase><testcase name="As a admin i want to add data dokter - Invalid"><failure message="Expected enabled element was not enabled&#10;Build info: version: '4.1.4', revision: '535d840ee2'&#10;System info: host: 'LAPTOP-SQP5LMI4', ip: '192.168.100.42', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15'&#10;Driver info: driver.version: unknown" type="net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException">Expected enabled element was not enabled
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'LAPTOP-SQP5LMI4', ip: '192.168.100.42', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15'
+Driver info: driver.version: unknown</failure><system-err>Expected enabled element was not enabled
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'LAPTOP-SQP5LMI4', ip: '192.168.100.42', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15'
+Driver info: driver.version: unknown&#13;
+TestingWeb@1.0-SNAPSHOT/starter.pages.DashboardPage.clickButtonDataDokter(DashboardPage.java:69)&#13;
+TestingWeb@1.0-SNAPSHOT/starter.stepdefinitios.DokterDataSteps.clickButtonDataDokter(DokterDataSteps.java:22)&#13;
+✽.Click button data dokter(file:///C:/Alterra/Web/TestingWeb/src/test/resources/features/AddDataDokter.feature:50)&#13;
+</system-err></testcase></testsuite>
