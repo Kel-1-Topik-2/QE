@@ -42,7 +42,7 @@ Feature: Data Dokter Admin
     And Valid data dokter
     Examples:
       |  email |password|namalengkap|   idi  |spesialis    |    username    |       pass    |validpass|
-      |admin   |admin123| Siti maria| 1234062 | Dokter Bedah |   BagasAjaGasih    |   BagasBedahDong  |BagasBedahDong|
+      |admin   |admin123| Dr HAKIM | 1234421 | Dokter GIGI | BagasKHoirul   |   BagasKHoirul |BagasKHoirul|
 
   @AddDokterDataKosong
   Scenario Outline: As a admin i want to add data dokter - Kosong
@@ -103,7 +103,7 @@ Feature: Data Dokter Admin
     And Valid edit data
     Examples:
       |  email |password|namalengkap|   idi  |  spesialis  |    username    |     pass      |validpass|
-      |admin   |admin123| Robbin  | 123413 | Dokter Kulit |  BagasTampan    |   12345444    | 12345444|
+      |admin   |admin123| Anissabag  | 123411 | Dokter Kulit |  BagasAniGAS    |   12345411    | 12345411|
 
   @EditDokterDataInvalid
   Scenario Outline: As a admin i want to edit data dokter - Invalid
