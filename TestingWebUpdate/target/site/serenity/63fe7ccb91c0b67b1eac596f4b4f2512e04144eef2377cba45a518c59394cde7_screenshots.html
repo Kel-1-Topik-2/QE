@@ -1,0 +1,315 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="bootstrap-icons/font/bootstrap-icons.css"><!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.11.3/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.11.3/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.11.3/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/>
+<!--CHART.JS-->
+<script src="chartjs/chart.js"></script>
+<script src="chartjs/chartjs-plugin-datalabels@2.0.0"></script>
+<script src="chartjs/patternomaly.min.js"></script>
+<script>
+    // Register the plugin to all charts:
+    Chart.register(ChartDataLabels);
+</script>
+<!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle"></span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="a214141d519c3951adef7c44338a121093446d618718b155c5b2b85ad9fbf198.html">Data Dokter Admin</a></span>
+                > <span class="truncate-60"><a
+                    href="63fe7ccb91c0b67b1eac596f4b4f2512e04144eef2377cba45a518c59394cde7.html">As a admin i want to delete data dokter </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="bi bi-journal-check"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="bi bi-journal-text"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 18-07-2022 10:16</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fs-2 bi bi-chat-left-quote large-icon"></i>
+                                    <span class="story-header-title">Data Dokter Admin </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="f2d0960221db53aea119da2c5877c391bf3bcf9d5f13cfd72d4b7252025a1f94.html">Data Dokter111
+                                    (tag)</a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="493a8a369e57a063d75849c4677b277d107a0f8722e9a56ddfd1e9989194c879.html">Search Dokter Data
+                                    (tag)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">As a admin i want to delete data dokter
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+    <div class="story-title">
+        <h3>Scenario:</h3>
+        <div class="scenario">Given Open login page<br>And I input "&lt;email&gt;" login email valid<br>And I input "&lt;password&gt;" login password valid<br>When I click button login<br>And Login validation invalid<br>And Click button data dokter<br>Then Click search all category dokter data<br>And Click chose nama dokter<br>And Input data "&lt;namacategory&gt;" category<br>And Valid data category pasien</div>
+    </div>
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="d122c364c40ece9db0ad32cd97c3fcf63e95ba606118dda8d3e5a1d2b8235ce2.png" title=" 1: As a admin i want to delete data dokter ({email=admin, password=admin123, namacategory=Bagas})" width="1034"/>
+                <img src="d122c364c40ece9db0ad32cd97c3fcf63e95ba606118dda8d3e5a1d2b8235ce2.png" title=" Given Open login page" width="1034"/>
+                <img src="d122c364c40ece9db0ad32cd97c3fcf63e95ba606118dda8d3e5a1d2b8235ce2.png" title=" Open login" width="1034"/>
+                <img src="d122c364c40ece9db0ad32cd97c3fcf63e95ba606118dda8d3e5a1d2b8235ce2.png" title=" Given Open login page (completed)" width="1034"/>
+                <img src="d122c364c40ece9db0ad32cd97c3fcf63e95ba606118dda8d3e5a1d2b8235ce2.png" title=" And I input &quot;admin&quot; login email valid" width="1034"/>
+                <img src="93df20195d3751dea78ac30a105f84d37c410e0341f58ded6fb231b5b47402e6.png" title=" And I input &quot;admin&quot; login email valid (completed)" width="1034"/>
+                <img src="93df20195d3751dea78ac30a105f84d37c410e0341f58ded6fb231b5b47402e6.png" title=" And I input &quot;admin123&quot; login password valid" width="1034"/>
+                <img src="f684e1524ced0278b0b6c6b37709a7cbfb8281aeb576b04a4743fda17448b798.png" title=" Input password login: admin123" width="1034"/>
+                <img src="44fa0aa493cf3a3837a7fab79c30bded8f584eda85d2cfd055a7ef5b4e3f0a4a.png" title=" Input password login: admin123 (completed)" width="1034"/>
+                <img src="44fa0aa493cf3a3837a7fab79c30bded8f584eda85d2cfd055a7ef5b4e3f0a4a.png" title=" And I input &quot;admin123&quot; login password valid (completed)" width="1034"/>
+                <img src="44fa0aa493cf3a3837a7fab79c30bded8f584eda85d2cfd055a7ef5b4e3f0a4a.png" title=" When I click button login" width="1034"/>
+                <img src="44fa0aa493cf3a3837a7fab79c30bded8f584eda85d2cfd055a7ef5b4e3f0a4a.png" title=" Click button login" width="1034"/>
+                <img src="fcd6a76fc001cd08719aada07f96cb9cefba0d989e51295803a6f278ff8f3ce0.png" title=" Click button login (completed)" width="1034"/>
+                <img src="879c72ce3a6d46342ff29961ea4d0fb320ba4771c3f42be35f86eb664a6a8f99.png" title=" When I click button login (completed)" width="1034"/>
+                <img src="879c72ce3a6d46342ff29961ea4d0fb320ba4771c3f42be35f86eb664a6a8f99.png" title=" And Login validation invalid" width="1034"/>
+                <img src="163e386af0b12517552a74a3d5043b94e8c0f9215c0f21d464e3b04d27a0859d.png" title=" Click button error OK" width="1034"/>
+                <img src="ff964fdf2f2994789bd02d63b62e0476afa34653b9363a9b0647c81f724e58db.png" title=" Click button error OK (completed)" width="1034"/>
+                <img src="ff964fdf2f2994789bd02d63b62e0476afa34653b9363a9b0647c81f724e58db.png" title=" And Login validation invalid (completed)" width="1034"/>
+                <img src="ff964fdf2f2994789bd02d63b62e0476afa34653b9363a9b0647c81f724e58db.png" title=" And Click button data dokter" width="1034"/>
+                <img src="0bc4546d24d9c2a32a58b0795977256ee15df019e100e8b78a33fd4a40551ab9.png" title=" Click button data dokter" width="1034"/>
+                <img src="e562d157a564ffb39a952d1ee749ddea0af5a41dffaffdaf56adc5209a50bd39.png" title=" Click button data dokter (completed)" width="1034"/>
+                <img src="e562d157a564ffb39a952d1ee749ddea0af5a41dffaffdaf56adc5209a50bd39.png" title=" And Click button data dokter (completed)" width="1034"/>
+                <img src="e562d157a564ffb39a952d1ee749ddea0af5a41dffaffdaf56adc5209a50bd39.png" title=" Then Click search all category dokter data" width="1034"/>
+                <img src="48953b740ffa6661044639042bed645457db1318160a942a832af8e30a7d234b.png" title=" Click button all category" width="1034"/>
+                <img src="5e768e9d161316e63acb7657fdd11441c09f165efb5b7e406ca548248f221e1e.png" title=" Click button all category (completed)" width="1034"/>
+                <img src="5e768e9d161316e63acb7657fdd11441c09f165efb5b7e406ca548248f221e1e.png" title=" Then Click search all category dokter data (completed)" width="1034"/>
+                <img src="5e768e9d161316e63acb7657fdd11441c09f165efb5b7e406ca548248f221e1e.png" title=" And Click chose nama dokter" width="1034"/>
+                <img src="5e768e9d161316e63acb7657fdd11441c09f165efb5b7e406ca548248f221e1e.png" title=" Click nama dokter" width="1034"/>
+                <img src="febd1dd895b7fa018a10c0f3e5db371c8533a895f27d5c32a138c67f78336623.png" title=" Click nama dokter (completed)" width="1034"/>
+                <img src="febd1dd895b7fa018a10c0f3e5db371c8533a895f27d5c32a138c67f78336623.png" title=" And Click chose nama dokter (completed)" width="1034"/>
+                <img src="febd1dd895b7fa018a10c0f3e5db371c8533a895f27d5c32a138c67f78336623.png" title=" And Input data &quot;Bagas&quot; category" width="1034"/>
+                <img src="febd1dd895b7fa018a10c0f3e5db371c8533a895f27d5c32a138c67f78336623.png" title=" Input data category: Bagas" width="1034"/>
+                <img src="4c56a7aa165cd749f45bebbb032666167e7bd0bfa24f46a87d7b395e44944c5e.png" title=" Input data category: Bagas (completed)" width="1034"/>
+                <img src="4c56a7aa165cd749f45bebbb032666167e7bd0bfa24f46a87d7b395e44944c5e.png" title=" And Input data &quot;Bagas&quot; category (completed)" width="1034"/>
+                <img src="4c56a7aa165cd749f45bebbb032666167e7bd0bfa24f46a87d7b395e44944c5e.png" title=" And Valid data category pasien" width="1034"/>
+                <img src="4c56a7aa165cd749f45bebbb032666167e7bd0bfa24f46a87d7b395e44944c5e.png" title=" Valid page pasien" width="1034"/>
+                <img src="4c56a7aa165cd749f45bebbb032666167e7bd0bfa24f46a87d7b395e44944c5e.png" title=" Valid page pasien (completed)" width="1034"/>
+                <img src="4c56a7aa165cd749f45bebbb032666167e7bd0bfa24f46a87d7b395e44944c5e.png" title=" 1: As a admin i want to delete data dokter ({email=admin, password=admin123, namacategory=Bagas})" width="1034"/>
+                <img src="4c56a7aa165cd749f45bebbb032666167e7bd0bfa24f46a87d7b395e44944c5e.png" title=" And Valid data category pasien (completed)" width="1034"/>
+                <img src="d122c364c40ece9db0ad32cd97c3fcf63e95ba606118dda8d3e5a1d2b8235ce2.png" title=" 2: As a admin i want to delete data dokter ({email=admin, password=admin123, namacategory=&amp;%^%^*)%})" width="1034"/>
+                <img src="d122c364c40ece9db0ad32cd97c3fcf63e95ba606118dda8d3e5a1d2b8235ce2.png" title=" Given Open login page" width="1034"/>
+                <img src="d122c364c40ece9db0ad32cd97c3fcf63e95ba606118dda8d3e5a1d2b8235ce2.png" title=" Open login" width="1034"/>
+                <img src="d122c364c40ece9db0ad32cd97c3fcf63e95ba606118dda8d3e5a1d2b8235ce2.png" title=" Given Open login page (completed)" width="1034"/>
+                <img src="d122c364c40ece9db0ad32cd97c3fcf63e95ba606118dda8d3e5a1d2b8235ce2.png" title=" And I input &quot;admin&quot; login email valid" width="1034"/>
+                <img src="93df20195d3751dea78ac30a105f84d37c410e0341f58ded6fb231b5b47402e6.png" title=" And I input &quot;admin&quot; login email valid (completed)" width="1034"/>
+                <img src="93df20195d3751dea78ac30a105f84d37c410e0341f58ded6fb231b5b47402e6.png" title=" And I input &quot;admin123&quot; login password valid" width="1034"/>
+                <img src="f684e1524ced0278b0b6c6b37709a7cbfb8281aeb576b04a4743fda17448b798.png" title=" Input password login: admin123" width="1034"/>
+                <img src="44fa0aa493cf3a3837a7fab79c30bded8f584eda85d2cfd055a7ef5b4e3f0a4a.png" title=" Input password login: admin123 (completed)" width="1034"/>
+                <img src="44fa0aa493cf3a3837a7fab79c30bded8f584eda85d2cfd055a7ef5b4e3f0a4a.png" title=" And I input &quot;admin123&quot; login password valid (completed)" width="1034"/>
+                <img src="44fa0aa493cf3a3837a7fab79c30bded8f584eda85d2cfd055a7ef5b4e3f0a4a.png" title=" When I click button login" width="1034"/>
+                <img src="44fa0aa493cf3a3837a7fab79c30bded8f584eda85d2cfd055a7ef5b4e3f0a4a.png" title=" Click button login" width="1034"/>
+                <img src="3de740019c4dbc324ffecdf69c5dbf340c4c0759dfda68551d30ea1f06adee9d.png" title=" Click button login (completed)" width="1034"/>
+                <img src="0526af45ecf0ccf8f0a616949f917b0436e2280abc53cb29d4bdd05d80faee84.png" title=" When I click button login (completed)" width="1034"/>
+                <img src="0526af45ecf0ccf8f0a616949f917b0436e2280abc53cb29d4bdd05d80faee84.png" title=" And Login validation invalid" width="1034"/>
+                <img src="163e386af0b12517552a74a3d5043b94e8c0f9215c0f21d464e3b04d27a0859d.png" title=" Click button error OK" width="1034"/>
+                <img src="c11f5d00f869f9e93e2aa13b319c4e06d9457362b9e489973adc565369b285ef.png" title=" Click button error OK (completed)" width="1034"/>
+                <img src="c11f5d00f869f9e93e2aa13b319c4e06d9457362b9e489973adc565369b285ef.png" title=" And Login validation invalid (completed)" width="1034"/>
+                <img src="c11f5d00f869f9e93e2aa13b319c4e06d9457362b9e489973adc565369b285ef.png" title=" And Click button data dokter" width="1034"/>
+                <img src="0bc4546d24d9c2a32a58b0795977256ee15df019e100e8b78a33fd4a40551ab9.png" title=" Click button data dokter" width="1034"/>
+                <img src="2f8a1e3951cdb2e8359203f9084e13708644db1f4e788b598c4343b92a1294fa.png" title=" Click button data dokter (completed)" width="1034"/>
+                <img src="2f8a1e3951cdb2e8359203f9084e13708644db1f4e788b598c4343b92a1294fa.png" title=" And Click button data dokter (completed)" width="1034"/>
+                <img src="2f8a1e3951cdb2e8359203f9084e13708644db1f4e788b598c4343b92a1294fa.png" title=" Then Click search all category dokter data" width="1034"/>
+                <img src="48953b740ffa6661044639042bed645457db1318160a942a832af8e30a7d234b.png" title=" Click button all category" width="1034"/>
+                <img src="5e768e9d161316e63acb7657fdd11441c09f165efb5b7e406ca548248f221e1e.png" title=" Click button all category (completed)" width="1034"/>
+                <img src="5e768e9d161316e63acb7657fdd11441c09f165efb5b7e406ca548248f221e1e.png" title=" Then Click search all category dokter data (completed)" width="1034"/>
+                <img src="5e768e9d161316e63acb7657fdd11441c09f165efb5b7e406ca548248f221e1e.png" title=" And Click chose nama dokter" width="1034"/>
+                <img src="5e768e9d161316e63acb7657fdd11441c09f165efb5b7e406ca548248f221e1e.png" title=" Click nama dokter" width="1034"/>
+                <img src="febd1dd895b7fa018a10c0f3e5db371c8533a895f27d5c32a138c67f78336623.png" title=" Click nama dokter (completed)" width="1034"/>
+                <img src="febd1dd895b7fa018a10c0f3e5db371c8533a895f27d5c32a138c67f78336623.png" title=" And Click chose nama dokter (completed)" width="1034"/>
+                <img src="febd1dd895b7fa018a10c0f3e5db371c8533a895f27d5c32a138c67f78336623.png" title=" And Input data &quot;&amp;%^%^*)%&quot; category" width="1034"/>
+                <img src="febd1dd895b7fa018a10c0f3e5db371c8533a895f27d5c32a138c67f78336623.png" title=" Input data category: &amp;%^%^*)%" width="1034"/>
+                <img src="86e3a30727ce3d2b1a04ee986747c5e5160b99d28decaafed8de326aff360d64.png" title=" Input data category: &amp;%^%^*)% (completed)" width="1034"/>
+                <img src="86e3a30727ce3d2b1a04ee986747c5e5160b99d28decaafed8de326aff360d64.png" title=" And Input data &quot;&amp;%^%^*)%&quot; category (completed)" width="1034"/>
+                <img src="86e3a30727ce3d2b1a04ee986747c5e5160b99d28decaafed8de326aff360d64.png" title=" And Valid data category pasien" width="1034"/>
+                <img src="86e3a30727ce3d2b1a04ee986747c5e5160b99d28decaafed8de326aff360d64.png" title=" Valid page pasien" width="1034"/>
+                <img src="86e3a30727ce3d2b1a04ee986747c5e5160b99d28decaafed8de326aff360d64.png" title=" And Valid data category pasien" width="1034"/>
+                <img src="86e3a30727ce3d2b1a04ee986747c5e5160b99d28decaafed8de326aff360d64.png" title=" Valid page pasien (completed)" width="1034"/>
+                <img src="86e3a30727ce3d2b1a04ee986747c5e5160b99d28decaafed8de326aff360d64.png" title=" 2: As a admin i want to delete data dokter ({email=admin, password=admin123, namacategory=&amp;%^%^*)%}) (completed): <span class='success-color'>SUCCESS</span>" width="1034"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 3.2.1</span>
+</div>
+</body>
+</html>

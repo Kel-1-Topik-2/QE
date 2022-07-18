@@ -75,7 +75,7 @@ public class LoginSteps {
     public void loginValidationInvalid() throws InterruptedException {
         Thread.sleep(5000);
         loginPage.loginInvalidError();
-        Thread.sleep(1000);
+        Thread.sleep(500);
         loginPage.clickButtonErrorOK();
     }
     @And("I input {string} login password valid")

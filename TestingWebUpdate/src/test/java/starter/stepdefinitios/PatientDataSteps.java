@@ -94,6 +94,9 @@ public class PatientDataSteps {
     public void clickButtonHapusYa() throws InterruptedException {
         Thread.sleep(3000);
         patientDataPage.clickButtonDeleteYa();
+        Thread.sleep(1000);
+        patientDataPage.validAddData();
+        patientDataPage.buttonClickOK();
     }
     @And("Click button hapus tidak")
     public void clickButtonHapusTidak() throws InterruptedException {

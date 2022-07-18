@@ -27,6 +27,12 @@ public class DokterDataPage extends PageObject {
     private By validPassDokter() {
         return By.xpath("//*[@name=\"confirmpassword\"]");
     }
+    private By passDokterEdit() {
+        return By.xpath("//*[@name=\"newPassword\"]");
+    }
+    private By validPassDokterEdit() {
+        return By.xpath("//*[@name=\"confirmPassword\"]");
+    }
     private By validTextError() {
         return By.xpath("//*[@class=\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation4 css-ao8rxk\"]");
     }
@@ -49,10 +55,10 @@ public class DokterDataPage extends PageObject {
         $(spesialisDokter()).sendKeys(spesialis);
         $(usernameDokter()).sendKeys(username, Keys.chord(Keys.CONTROL, "a"));
         $(usernameDokter()).sendKeys(username);
-        $(passDokter()).sendKeys(pass, Keys.chord(Keys.CONTROL, "a"));
-        $(passDokter()).sendKeys(pass);
-        $(validPassDokter()).sendKeys(confirmpass, Keys.chord(Keys.CONTROL, "a"));
-        $(validPassDokter()).sendKeys(confirmpass);
+        $(passDokterEdit()).sendKeys(pass, Keys.chord(Keys.CONTROL, "a"));
+        $(passDokterEdit()).sendKeys(pass);
+        $(validPassDokterEdit()).sendKeys(confirmpass, Keys.chord(Keys.CONTROL, "a"));
+        $(validPassDokterEdit()).sendKeys(confirmpass);
     }
     @Step
     public boolean validateTextMessegerDokter(String text) {

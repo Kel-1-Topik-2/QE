@@ -144,7 +144,7 @@
             $("#requirements-tabs").tabs();
             $("#test-tabs").tabs();
 
-            var requirementsTree = [{"text":"Add Data Pasien - Admin","type":"feature","href":"849b20c5ca729662b720b3cc38d658b88e3f55e049d7a381c8601572c8d1c8ed.html","nodes":[],"selectable":false,"tags":["\u003ca href\u003d\u0027##beforetable\u0027\u003e\u003ci class\u003d\u0027bi bi-x-circle-fill failure-icon \u0027 title\u003d\u0027FAILURE\u0027\u003e\u003c/i\u003e\u003c/a\u003e","\u003cspan class\u003d\u0027feature-count\u0027\u003e13 scenarios\u003c/span\u003e"]}];
+            var requirementsTree = [];
 
             $('#tree').treeview({
                 data: requirementsTree,
@@ -215,7 +215,7 @@
             <a href="#"><i class="bi bi-chat-text"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 16-07-2022 12:28</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated </span>
     <br style="clear:left"/>
 </div>
 
@@ -230,20 +230,11 @@
                         <div clas="table">
                             <div class="row">
 
-                                   <div class="col-sm-8">
+                                    <div class="col-sm-12">
                                         <span>
                                             <h2><i class="bi bi-book"></i> Feature: Add Data Pasien - Admin</h2>
                                         </span>
                                     </div>
-                                        <div class="col-sm-4">
-                                        <span class="feature-tags">
-                                            <p class="tag">
-                                                    <span class="badge feature-tag tag-badge" style="background:default;">
-                                                        <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="4c5cac93b189b868371faeec29589b2efe17ad9248042d914f67b026e99c59f8.html">AddPatientData (tag)</a>
-                                                    </span>
-                                            </p>
-                                        </span>
-                                        </div>
                                 </div>
                             </div>
                         </div>
@@ -278,381 +269,13 @@
                                                 <h3>Feature Coverage By Scenario</h3>
 
                                                 <!-- REQUIREMENTS PIE CHART -->
-                                                    <div class="chart-container" style="position: relative; width:30vw">
-                                                        <canvas id="requirementChart" width="300" height="300"></canvas>
-                                                    </div>
 
                                             </div>
                                             <div class="col-sm-8">
-                                                <!--- TOC --->
-                                                <div id="toc">
-                                                    <h3>Overview</h3>
-                                                    <table class="table" id="toc-table">
-                                                                    <tr>
-                                                                        <td style="width:95%;" class="toc-title">
-                                                                            <span class="orphan-scenario-toc-entry">
-                                                                                    <a href="#43f70ee40a0eb985000b6a1d1ed20e744f81630d7664bb94c669f436be262901"
-                                                                                       title="View scenario details">
-                                                                                        <i class="bi bi-chat-dots"></i> Scenario Outline: As a admin i want to add data pasien (JK Laki-Laki) - Valid
-                                                                                    </a>
-                                                                                        (1 example)
-                                                                                </span>
-                                                                        </td>
-                                                                        <td>
+                                                <h3>Requirements Overview</h3>
 
-                                                                        </td>
-                                                                        <td style="width:5%;">
-                                                                            <table>
-                                                                                <tr>
-                                                                                    <td class="icons-bar">
-                                                                                        <a style="margin-left:0.5em;padding-right: 1.5em;"
-                                                                                           href="3a2c66a8812b2ceb1e6a9e714025eca555c503d358ad6e6c37b5285f87d300f5.html"
-                                                                                           title="View test results">
-                                                                                            <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
-                                                                                            </a>
+                                                <div id="tree"></div>
 
-
-                                                                                            <a style="margin-left:0.5em;padding-right: 1.5em;"
-                                                                                               href="3a2c66a8812b2ceb1e6a9e714025eca555c503d358ad6e6c37b5285f87d300f5.html"
-                                                                                               title="View test results">
-                                                                                                <i class="bi bi-eyeglasses"></i>
-                                                                                            </a>
-                                                                                    </td>
-                                                                                </tr>
-                                                                            </table>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td style="width:95%;" class="toc-title">
-                                                                            <span class="orphan-scenario-toc-entry">
-                                                                                    <a href="#d4b266c92686bae706717dd437e28125ecfaf260e8bdc4811e7ac4735c51c676"
-                                                                                       title="View scenario details">
-                                                                                        <i class="bi bi-chat-dots"></i> Scenario Outline: As a admin i want to add data pasien (JK Laki-Laki) - Valid not Gender
-                                                                                    </a>
-                                                                                        (1 example)
-                                                                                </span>
-                                                                        </td>
-                                                                        <td>
-
-                                                                        </td>
-                                                                        <td style="width:5%;">
-                                                                            <table>
-                                                                                <tr>
-                                                                                    <td class="icons-bar">
-                                                                                        <a style="margin-left:0.5em;padding-right: 1.5em;"
-                                                                                           href="9e3909f341b0640139bdef8b74dd703e6bd49d5b00ee23d3dc18c854fc885119.html"
-                                                                                           title="View test results">
-                                                                                            <a href='##beforetable'><i class='bi bi-x-circle-fill failure-icon ' title='FAILURE'></i></a>
-                                                                                            </a>
-
-
-                                                                                            <a style="margin-left:0.5em;padding-right: 1.5em;"
-                                                                                               href="9e3909f341b0640139bdef8b74dd703e6bd49d5b00ee23d3dc18c854fc885119.html"
-                                                                                               title="View test results">
-                                                                                                <i class="bi bi-eyeglasses"></i>
-                                                                                            </a>
-                                                                                    </td>
-                                                                                </tr>
-                                                                            </table>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td style="width:95%;" class="toc-title">
-                                                                            <span class="orphan-scenario-toc-entry">
-                                                                                    <a href="#b4dc1644b8026d1e14ebf968ba89f577dc7c630674b8af6f6c2672ccbae84f19"
-                                                                                       title="View scenario details">
-                                                                                        <i class="bi bi-chat-dots"></i> Scenario Outline: As a admin i want to add data pasien (JK Laki-Laki) - Kosong
-                                                                                    </a>
-                                                                                        (6 examples)
-                                                                                </span>
-                                                                        </td>
-                                                                        <td>
-
-                                                                        </td>
-                                                                        <td style="width:5%;">
-                                                                            <table>
-                                                                                <tr>
-                                                                                    <td class="icons-bar">
-                                                                                        <a style="margin-left:0.5em;padding-right: 1.5em;"
-                                                                                           href="328b5c44441d2d6ae4f9151a14184489a08c147ee1e03c463c0c1aab87c1df6d.html"
-                                                                                           title="View test results">
-                                                                                            <a href='##beforetable'><i class='bi bi-x-circle-fill failure-icon ' title='FAILURE'></i></a>
-                                                                                            </a>
-
-
-                                                                                            <a style="margin-left:0.5em;padding-right: 1.5em;"
-                                                                                               href="328b5c44441d2d6ae4f9151a14184489a08c147ee1e03c463c0c1aab87c1df6d.html"
-                                                                                               title="View test results">
-                                                                                                <i class="bi bi-eyeglasses"></i>
-                                                                                            </a>
-                                                                                    </td>
-                                                                                </tr>
-                                                                            </table>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td style="width:95%;" class="toc-title">
-                                                                            <span class="orphan-scenario-toc-entry">
-                                                                                    <a href="#4089a945dd9a950275507c428457b806e23d6003003946dfab14eb63b67709f7"
-                                                                                       title="View scenario details">
-                                                                                        <i class="bi bi-chat-dots"></i> Scenario Outline: As a admin i want to add data pasien (JK Laki-Laki) - Invalid
-                                                                                    </a>
-                                                                                        (5 examples)
-                                                                                </span>
-                                                                        </td>
-                                                                        <td>
-
-                                                                        </td>
-                                                                        <td style="width:5%;">
-                                                                            <table>
-                                                                                <tr>
-                                                                                    <td class="icons-bar">
-                                                                                        <a style="margin-left:0.5em;padding-right: 1.5em;"
-                                                                                           href="af77840f680df7adccf80ad191b635c22d03b5c461aeb6244bcd49dbef496cd7.html"
-                                                                                           title="View test results">
-                                                                                            <a href='##beforetable'><i class='bi bi-x-circle-fill failure-icon ' title='FAILURE'></i></a>
-                                                                                            </a>
-
-
-                                                                                            <a style="margin-left:0.5em;padding-right: 1.5em;"
-                                                                                               href="af77840f680df7adccf80ad191b635c22d03b5c461aeb6244bcd49dbef496cd7.html"
-                                                                                               title="View test results">
-                                                                                                <i class="bi bi-eyeglasses"></i>
-                                                                                            </a>
-                                                                                    </td>
-                                                                                </tr>
-                                                                            </table>
-                                                                        </td>
-                                                                    </tr>
-                                                    </table>
-                                                </div>
-                                                <!--- END OF TOC --->
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-sm-12">
-                                                    <h3>Scenarios</h3>
-
-                                                        <a name="ea465987-379c-44f1-8163-674b058482ed"></a>
-                                                        <p class="rule-tags inline-tag">
-                                                        </p>
-
-
-                                                            <div class="scenario-docs card" id="43f70ee40a0eb985000b6a1d1ed20e744f81630d7664bb94c669f436be262901">
-                                                                <div class="scenario-docs card-header success" style="min-height:1.5em;">
-                                                                    <div>
-                                                                        <span class="scenario-heading">
-                                                                            <a href="3a2c66a8812b2ceb1e6a9e714025eca555c503d358ad6e6c37b5285f87d300f5.html"
-                                                                               title="View test results">Scenario Outline: As a admin i want to add data pasien (JK Laki-Laki) - Valid</a>
-                                                                        </span>
-
-                                                                        <span class="example-tags inline-tag">
-                                                                                <span class="badge tag-badge" style="background:default;">
-                                                                                    <i class="bi bi-tag-fill"></i>&nbsp;
-                                                                                    <a class="tagLink" style="background:default;" href="9192dc19d5cb02dc4dcf9e0fa02b868b90b0570e49986e2f6dde353ce8aeb727.html">AddPatientDataValid (tag)</a>
-                                                                                </span>
-                                                                        </span>
-
-                                                                        <span class="scenario-result-icon">
-                                                                    
-
-                                                                                <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
-                                                                        </span>
-                                                                    </div>
-
-                                                                </div>
-                                                                <div class="scenario-docs card-body">
-                                                                        <p>Given Open login page</p>
-                                                                        <p>And I input &quot;{email}&quot; login email valid</p>
-                                                                        <p>And I input &quot;{password}&quot; login password valid</p>
-                                                                        <p>And I click button login</p>
-                                                                        <p>And Login validation invalid</p>
-                                                                        <p>When Click button data pasien</p>
-                                                                        <p>And Click button tambah data</p>
-                                                                        <p>And I input &quot;{namalengkap}&quot; &quot;{nik}&quot; &quot;{usia}&quot; &quot;{nomortelepon}&quot; &quot;{alamat}&quot; patient</p>
-                                                                        <p>And I click button jenis kelamin laki-laki</p>
-                                                                        <p>Then Click button simpan</p>
-                                                                        <p>And Valid data pasien</p>
-                                                                    <div class="examples">
-                                                                            <p><p>Examples:</p>
-<blockquote>
-</blockquote>
-<div class='example-table-in-scenario'><table>
-<thead>
-<tr><th>email</th><th>password</th><th>namalengkap</th><th>nik</th><th>usia</th><th>nomortelepon</th><th>alamat</th><th></th></tr>
-</thead>
-<tbody>
-<tr><td>admin</td><td>admin123</td><td>Dim Thomas</td><td>4442567898944714</td><td>15</td><td>08524654455</td><td>perumahan</td><td><a href='3a2c66a8812b2ceb1e6a9e714025eca555c503d358ad6e6c37b5285f87d300f5.html#beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a></td></tr>
-</tbody>
-</table></div>
-</p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="scenario-docs card" id="d4b266c92686bae706717dd437e28125ecfaf260e8bdc4811e7ac4735c51c676">
-                                                                <div class="scenario-docs card-header failure" style="min-height:1.5em;">
-                                                                    <div>
-                                                                        <span class="scenario-heading">
-                                                                            <a href="9e3909f341b0640139bdef8b74dd703e6bd49d5b00ee23d3dc18c854fc885119.html"
-                                                                               title="View test results">Scenario Outline: As a admin i want to add data pasien (JK Laki-Laki) - Valid not Gender</a>
-                                                                        </span>
-
-                                                                        <span class="example-tags inline-tag">
-                                                                                <span class="badge tag-badge" style="background:default;">
-                                                                                    <i class="bi bi-tag-fill"></i>&nbsp;
-                                                                                    <a class="tagLink" style="background:default;" href="102a50b657e6913cbc005cf56d1a5e194744fc7efddac50e37f4bb2868b8802c.html">AddPatientDataValidNoGender (tag)</a>
-                                                                                </span>
-                                                                        </span>
-
-                                                                        <span class="scenario-result-icon">
-                                                                    
-
-                                                                                <a href='##beforetable'><i class='bi bi-x-circle-fill failure-icon ' title='FAILURE'></i></a>
-                                                                        </span>
-                                                                    </div>
-
-                                                                </div>
-                                                                <div class="scenario-docs card-body">
-                                                                        <p>Given Open login page</p>
-                                                                        <p>And I input &quot;{email}&quot; login email valid</p>
-                                                                        <p>And I input &quot;{password}&quot; login password valid</p>
-                                                                        <p>And I click button login</p>
-                                                                        <p>And Login validation invalid</p>
-                                                                        <p>When Click button data pasien</p>
-                                                                        <p>And Click button tambah data</p>
-                                                                        <p>And I input &quot;{namalengkap}&quot; &quot;{nik}&quot; &quot;{usia}&quot; &quot;{nomortelepon}&quot; &quot;{alamat}&quot; patient</p>
-                                                                        <p>Then Click button simpan</p>
-                                                                        <p>And Validate add error messenger &quot;{text}&quot; Pasien</p>
-                                                                    <div class="examples">
-                                                                            <p><p>Examples:</p>
-<blockquote>
-</blockquote>
-<div class='example-table-in-scenario'><table>
-<thead>
-<tr><th>email</th><th>password</th><th>namalengkap</th><th>nik</th><th>usia</th><th>nomortelepon</th><th>alamat</th><th>text</th><th></th></tr>
-</thead>
-<tbody>
-<tr><td>admin</td><td>admin123</td><td>ST Wogi ya</td><td>1234567898973324</td><td>32</td><td>08514653325</td><td>perumahan</td><td></td><td><a href='9e3909f341b0640139bdef8b74dd703e6bd49d5b00ee23d3dc18c854fc885119.html#beforetable'><i class='bi bi-x-circle-fill failure-icon ' title='FAILURE'></i></a></td></tr>
-</tbody>
-</table></div>
-</p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="scenario-docs card" id="b4dc1644b8026d1e14ebf968ba89f577dc7c630674b8af6f6c2672ccbae84f19">
-                                                                <div class="scenario-docs card-header failure" style="min-height:1.5em;">
-                                                                    <div>
-                                                                        <span class="scenario-heading">
-                                                                            <a href="328b5c44441d2d6ae4f9151a14184489a08c147ee1e03c463c0c1aab87c1df6d.html"
-                                                                               title="View test results">Scenario Outline: As a admin i want to add data pasien (JK Laki-Laki) - Kosong</a>
-                                                                        </span>
-
-                                                                        <span class="example-tags inline-tag">
-                                                                                <span class="badge tag-badge" style="background:default;">
-                                                                                    <i class="bi bi-tag-fill"></i>&nbsp;
-                                                                                    <a class="tagLink" style="background:default;" href="010b2980c3b082d1c8264492f9a7e4b6266c33142de7c7a0dafb212798ae9abe.html">AddPatientDataKosong (tag)</a>
-                                                                                </span>
-                                                                        </span>
-
-                                                                        <span class="scenario-result-icon">
-                                                                    
-
-                                                                                <a href='##beforetable'><i class='bi bi-x-circle-fill failure-icon ' title='FAILURE'></i></a>
-                                                                        </span>
-                                                                    </div>
-
-                                                                </div>
-                                                                <div class="scenario-docs card-body">
-                                                                        <p>Given Open login page</p>
-                                                                        <p>And I input &quot;{email}&quot; login email valid</p>
-                                                                        <p>And I input &quot;{password}&quot; login password valid</p>
-                                                                        <p>And I click button login</p>
-                                                                        <p>And Login validation invalid</p>
-                                                                        <p>When Click button data pasien</p>
-                                                                        <p>And Click button tambah data</p>
-                                                                        <p>And I input &quot;{namalengkap}&quot; &quot;{nik}&quot; &quot;{usia}&quot; &quot;{nomortelepon}&quot; &quot;{alamat}&quot; patient</p>
-                                                                        <p>And I click button jenis kelamin laki-laki</p>
-                                                                        <p>Then Click button simpan</p>
-                                                                        <p>And Validate add error messenger &quot;{text}&quot; Pasien</p>
-                                                                    <div class="examples">
-                                                                            <p><p>Examples:</p>
-<blockquote>
-</blockquote>
-<div class='example-table-in-scenario'><table>
-<thead>
-<tr><th>email</th><th>password</th><th>namalengkap</th><th>nik</th><th>usia</th><th>nomortelepon</th><th>alamat</th><th>text</th><th></th></tr>
-</thead>
-<tbody>
-<tr><td>admin</td><td>admin123</td><td></td><td></td><td></td><td></td><td></td><td></td><td><a href='328b5c44441d2d6ae4f9151a14184489a08c147ee1e03c463c0c1aab87c1df6d.html#beforetable'><i class='bi bi-x-circle-fill failure-icon ' title='FAILURE'></i></a></td></tr>
-<tr><td>admin</td><td>admin123</td><td></td><td>1234567898976546</td><td>20</td><td>01294657612</td><td>perumahan</td><td>nama pasien perlu dibutuhkan</td><td><a href='328b5c44441d2d6ae4f9151a14184489a08c147ee1e03c463c0c1aab87c1df6d.html#beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a></td></tr>
-<tr><td>admin</td><td>admin123</td><td>Bagas</td><td></td><td>11</td><td>01294657612</td><td>perumahan</td><td>nik perlu dibutuhkan</td><td><a href='328b5c44441d2d6ae4f9151a14184489a08c147ee1e03c463c0c1aab87c1df6d.html#beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a></td></tr>
-<tr><td>admin</td><td>admin123</td><td>Bagas</td><td>1234567898976546</td><td></td><td>01294657612</td><td>perumahan</td><td>umur tidak sesuai</td><td><a href='328b5c44441d2d6ae4f9151a14184489a08c147ee1e03c463c0c1aab87c1df6d.html#beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a></td></tr>
-<tr><td>admin</td><td>admin123</td><td>Bagas</td><td>1234567898976546</td><td>12</td><td></td><td>perumahan</td><td>nomor telpon perlu dibutuhkan</td><td><a href='328b5c44441d2d6ae4f9151a14184489a08c147ee1e03c463c0c1aab87c1df6d.html#beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a></td></tr>
-<tr><td>admin</td><td>admin123</td><td>Bagas</td><td>1234567898976546</td><td>13</td><td>01294657612</td><td></td><td>alamat perlu dibutuhkan</td><td><a href='328b5c44441d2d6ae4f9151a14184489a08c147ee1e03c463c0c1aab87c1df6d.html#beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a></td></tr>
-</tbody>
-</table></div>
-</p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="scenario-docs card" id="4089a945dd9a950275507c428457b806e23d6003003946dfab14eb63b67709f7">
-                                                                <div class="scenario-docs card-header failure" style="min-height:1.5em;">
-                                                                    <div>
-                                                                        <span class="scenario-heading">
-                                                                            <a href="af77840f680df7adccf80ad191b635c22d03b5c461aeb6244bcd49dbef496cd7.html"
-                                                                               title="View test results">Scenario Outline: As a admin i want to add data pasien (JK Laki-Laki) - Invalid</a>
-                                                                        </span>
-
-                                                                        <span class="example-tags inline-tag">
-                                                                                <span class="badge tag-badge" style="background:default;">
-                                                                                    <i class="bi bi-tag-fill"></i>&nbsp;
-                                                                                    <a class="tagLink" style="background:default;" href="da2e1390cf7b366733e5ef1227e6c94315155a6ae28f1babff07ca466a883227.html">AddPatientDataInvalid (tag)</a>
-                                                                                </span>
-                                                                        </span>
-
-                                                                        <span class="scenario-result-icon">
-                                                                    
-
-                                                                                <a href='##beforetable'><i class='bi bi-x-circle-fill failure-icon ' title='FAILURE'></i></a>
-                                                                        </span>
-                                                                    </div>
-
-                                                                </div>
-                                                                <div class="scenario-docs card-body">
-                                                                        <p>Given Open login page</p>
-                                                                        <p>And I input &quot;{email}&quot; login email valid</p>
-                                                                        <p>And I input &quot;{password}&quot; login password valid</p>
-                                                                        <p>And I click button login</p>
-                                                                        <p>And Login validation invalid</p>
-                                                                        <p>When Click button data pasien</p>
-                                                                        <p>And Click button tambah data</p>
-                                                                        <p>And I input &quot;{namalengkap}&quot; &quot;{nik}&quot; &quot;{usia}&quot; &quot;{nomortelepon}&quot; &quot;{alamat}&quot; patient</p>
-                                                                        <p>And I click button jenis kelamin laki-laki</p>
-                                                                        <p>Then Click button simpan</p>
-                                                                        <p>And Validate add error messenger &quot;{text}&quot; Pasien</p>
-                                                                    <div class="examples">
-                                                                            <p><p>Examples:</p>
-<blockquote>
-</blockquote>
-<div class='example-table-in-scenario'><table>
-<thead>
-<tr><th>email</th><th>password</th><th>namalengkap</th><th>nik</th><th>usia</th><th>nomortelepon</th><th>alamat</th><th>text</th><th></th></tr>
-</thead>
-<tbody>
-<tr><td>admin</td><td>admin123</td><td>12345</td><td>1234567898976546</td><td>20</td><td>01294657612</td><td>perumahan</td><td>nama pasien perlu dibutuhkan</td><td><a href='af77840f680df7adccf80ad191b635c22d03b5c461aeb6244bcd49dbef496cd7.html#beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a></td></tr>
-<tr><td>admin</td><td>admin123</td><td>Bagas</td><td>123456789</td><td>11</td><td>01294657612</td><td>perumahan</td><td>nik perlu dibutuhkan</td><td><a href='af77840f680df7adccf80ad191b635c22d03b5c461aeb6244bcd49dbef496cd7.html#beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a></td></tr>
-<tr><td>admin</td><td>admin123</td><td>Bagas</td><td>1234567898976546</td><td>e</td><td>01294657612</td><td>perumahan</td><td>umur tidak sesuai</td><td><a href='af77840f680df7adccf80ad191b635c22d03b5c461aeb6244bcd49dbef496cd7.html#beforetable'><i class='bi bi-x-circle-fill failure-icon ' title='FAILURE'></i></a></td></tr>
-<tr><td>admin</td><td>admin123</td><td>Bagas</td><td>1234567898976546</td><td>12</td><td>bagasdwisap</td><td>perumahan</td><td>nomor telpon perlu dibutuhkan</td><td><a href='af77840f680df7adccf80ad191b635c22d03b5c461aeb6244bcd49dbef496cd7.html#beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a></td></tr>
-<tr><td>admin</td><td>admin123</td><td>Bagas</td><td>1234567898976546</td><td>13</td><td>01294657612</td><td>121323232</td><td>alamat perlu dibutuhkan</td><td><a href='af77840f680df7adccf80ad191b635c22d03b5c461aeb6244bcd49dbef496cd7.html#beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a></td></tr>
-</tbody>
-</table></div>
-</p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
                                             </div>
                                         </div>
                                     </div>
@@ -664,9 +287,6 @@
                                             <div class="col-sm-4">
                                                 <h3>Feature Coverage By Scenario</h3>
                                                 <!-- TEST RESULT PIE CHART -->
-                                                    <div class="chart-container" style="position: relative; width:30vw">
-                                                        <canvas id="resultChart" width="300" height="300"></canvas>
-                                                    </div>
                                             </div>
                                             <div class="col-sm-4">
                                                 <h4><i class="bi bi-check-square"></i> Test Outcomes</h4>
@@ -691,72 +311,7 @@
                                             <div class="col-sm-12">
                                                 <h3><i class="bi bi-gear"></i> Automated Tests</h3>
 
-                                                    <table class="scenario-result-table table"
-                                                           id="scenario-results">
-                                                        <thead>
-                                                        <tr>
-                                                            <th class="test-name-column">Scenario</th>
-                                                            <th>Steps</th>
-                                                            <th>Started</th>
-                                                            <th>Duration</th>
-                                                            <th>Result</th>
-                                                        </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                            <tr class="scenario-result SUCCESS">
-                                                                <td>
-                                                                        <a href="3a2c66a8812b2ceb1e6a9e714025eca555c503d358ad6e6c37b5285f87d300f5.html">As a admin i want to add data pasien (JK Laki-Laki) - Valid</a>
-                                                                        (1 example)
-                                                                </td>
-                                                                <td>11</td>
-                                                                <td>12:28:46</td>
-                                                                <td>33s 807ms</td>
-                                                                <td>
-                                                                        <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
-                                                                            style="display:none">SUCCESS</span>
-                                                                                                                                    </td>
-                                                            </tr>
-                                                            <tr class="scenario-result FAILURE">
-                                                                <td>
-                                                                        <a href="9e3909f341b0640139bdef8b74dd703e6bd49d5b00ee23d3dc18c854fc885119.html">As a admin i want to add data pasien (JK Laki-Laki) - Valid not Gender</a>
-                                                                        (1 example)
-                                                                </td>
-                                                                <td>10</td>
-                                                                <td>12:29:20</td>
-                                                                <td>23s 459ms</td>
-                                                                <td>
-                                                                        <a href='##beforetable'><i class='bi bi-x-circle-fill failure-icon ' title='FAILURE'></i></a> <span
-                                                                            style="display:none">FAILURE</span>
-                                                                                                                                    </td>
-                                                            </tr>
-                                                            <tr class="scenario-result FAILURE">
-                                                                <td>
-                                                                        <a href="328b5c44441d2d6ae4f9151a14184489a08c147ee1e03c463c0c1aab87c1df6d.html">As a admin i want to add data pasien (JK Laki-Laki) - Kosong</a>
-                                                                        (6 examples)
-                                                                </td>
-                                                                <td>11</td>
-                                                                <td>12:29:43</td>
-                                                                <td>2m 50s</td>
-                                                                <td>
-                                                                        <a href='##beforetable'><i class='bi bi-x-circle-fill failure-icon ' title='FAILURE'></i></a> <span
-                                                                            style="display:none">FAILURE</span>
-                                                                                                                                    </td>
-                                                            </tr>
-                                                            <tr class="scenario-result FAILURE">
-                                                                <td>
-                                                                        <a href="af77840f680df7adccf80ad191b635c22d03b5c461aeb6244bcd49dbef496cd7.html">As a admin i want to add data pasien (JK Laki-Laki) - Invalid</a>
-                                                                        (5 examples)
-                                                                </td>
-                                                                <td>11</td>
-                                                                <td>12:32:33</td>
-                                                                <td>2m 19s</td>
-                                                                <td>
-                                                                        <a href='##beforetable'><i class='bi bi-x-circle-fill failure-icon ' title='FAILURE'></i></a> <span
-                                                                            style="display:none">FAILURE</span>
-                                                                                                                                    </td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
+                                                    No automated tests were executed
 
                                             </div>
                                         </div>
@@ -770,42 +325,6 @@
                                             </div>
                                         </div>
 
-        <div class="row">
-            <div class="col-sm-12">
-                <h3>Tags</h3>
-                    <div class="card">
-                        <div class="card-body">
-                            <div>
-                                    <a href="9192dc19d5cb02dc4dcf9e0fa02b868b90b0570e49986e2f6dde353ce8aeb727.html">
-                                    <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
-                                        <i class="bi bi-tag-fill"></i> Add Patient Data Valid&nbsp;&nbsp;&nbsp;1
-                                    </span>
-                                    </a>
-                                    <a href="4c5cac93b189b868371faeec29589b2efe17ad9248042d914f67b026e99c59f8.html">
-                                    <span class="tag-badge badge" style="background-color:#fd938e; margin:1em;padding:4px;">
-                                        <i class="bi bi-tag-fill"></i> Add Patient Data&nbsp;&nbsp;&nbsp;13
-                                    </span>
-                                    </a>
-                                    <a href="102a50b657e6913cbc005cf56d1a5e194744fc7efddac50e37f4bb2868b8802c.html">
-                                    <span class="tag-badge badge" style="background-color:#fd938e; margin:1em;padding:4px;">
-                                        <i class="bi bi-tag-fill"></i> Add Patient Data Valid No Gender&nbsp;&nbsp;&nbsp;1
-                                    </span>
-                                    </a>
-                                    <a href="010b2980c3b082d1c8264492f9a7e4b6266c33142de7c7a0dafb212798ae9abe.html">
-                                    <span class="tag-badge badge" style="background-color:#fd938e; margin:1em;padding:4px;">
-                                        <i class="bi bi-tag-fill"></i> Add Patient Data Kosong&nbsp;&nbsp;&nbsp;6
-                                    </span>
-                                    </a>
-                                    <a href="da2e1390cf7b366733e5ef1227e6c94315155a6ae28f1babff07ca466a883227.html">
-                                    <span class="tag-badge badge" style="background-color:#fd938e; margin:1em;padding:4px;">
-                                        <i class="bi bi-tag-fill"></i> Add Patient Data Invalid&nbsp;&nbsp;&nbsp;5
-                                    </span>
-                                    </a>
-                            </div>
-                        </div>
-                    </div>
-            </div>
-        </div>
                                     </div>
                                 </div>
                             </div>
@@ -846,7 +365,7 @@
             datasets: [{
                 label: 'Test Results',
                 fill: false,
-                data: [{meta: 'Passing tests', value: 10}, {meta: 'Pending tests', value: 0}, {meta: 'Ignored tests', value: 0}, {meta: 'Skipped tests', value: 0}, {meta: 'Aborted tests', value: 0}, {meta: 'Failing tests', value: 3}, {meta: 'Broken tests', value: 0}, {meta: 'Compromised tests', value: 0}],
+                data: [{meta: 'Passing tests', value: 0}, {meta: 'Pending tests', value: 0}, {meta: 'Ignored tests', value: 0}, {meta: 'Skipped tests', value: 0}, {meta: 'Aborted tests', value: 0}, {meta: 'Failing tests', value: 0}, {meta: 'Broken tests', value: 0}, {meta: 'Compromised tests', value: 0}],
                 backgroundColor: ['rgba(153,204,51,0.5)','rgba(165, 199, 238, 0.5)','rgba(168, 168, 168, 0.5)','rgba(238, 224, 152, 0.75)','rgba(255, 153, 102, 0.5)','rgba(255, 22, 49, 0.5)','rgba(255, 97, 8, 0.5)','rgba(255, 104, 255, 0.5)','rgba(83, 50, 168, 0.5)'],
                 borderColor: ['rgba(153,204,51,1)','rgba(165, 199, 238, 1)','rgba(168, 168, 168, 1)','rgba(238, 224, 152, 1)','rgba(255, 153, 102, 1)','rgba(255, 22, 49, 1)','rgba(255, 97, 8, 1)','rgba(255, 104, 255, 1)','rgba(83, 50, 168, 1)'],
                 borderWidth: 1,
@@ -897,7 +416,7 @@
                         ctx.font = fontSize + "em sans-serif";
                         ctx.textBaseline = "middle";
 
-                        var text = "77%"
+                        var text = " "
                         textX = 10 + Math.round((width - ctx.measureText(text).width) / 2);
                         textY = (height / 2) - 40;
 
@@ -941,7 +460,7 @@
             datasets: [{
                 label: 'Feature Coverage',
                 fill: false,
-                data: [{meta: 'Passing tests', value: 10}, {meta: 'Pending tests', value: 0}, {meta: 'Ignored tests', value: 0}, {meta: 'Skipped tests', value: 0}, {meta: 'Aborted tests', value: 0}, {meta: 'Failing tests', value: 3}, {meta: 'Broken tests', value: 0}, {meta: 'Compromised tests', value: 0}],
+                data: [{meta: 'Passing tests', value: 0}, {meta: 'Pending tests', value: 0}, {meta: 'Ignored tests', value: 0}, {meta: 'Skipped tests', value: 0}, {meta: 'Aborted tests', value: 0}, {meta: 'Failing tests', value: 0}, {meta: 'Broken tests', value: 0}, {meta: 'Compromised tests', value: 0}],
                 backgroundColor: ['rgba(153,204,51,0.5)','rgba(165, 199, 238, 0.5)','rgba(168, 168, 168, 0.5)','rgba(238, 224, 152, 0.75)','rgba(255, 153, 102, 0.5)','rgba(255, 22, 49, 0.5)','rgba(255, 97, 8, 0.5)','rgba(255, 104, 255, 0.5)','rgba(83, 50, 168, 0.5)'],
                 borderColor: ['rgba(153,204,51,1)','rgba(165, 199, 238, 1)','rgba(168, 168, 168, 1)','rgba(238, 224, 152, 1)','rgba(255, 153, 102, 1)','rgba(255, 22, 49, 1)','rgba(255, 97, 8, 1)','rgba(255, 104, 255, 1)','rgba(83, 50, 168, 1)'],
                 borderWidth: 1,
@@ -992,7 +511,7 @@
                         ctx.font = fontSize + "em sans-serif";
                         ctx.textBaseline = "middle";
 
-                        var text = "77%"
+                        var text = " "
                         textX = 10 + Math.round((width - ctx.measureText(text).width) / 2);
                         textY = (height / 2) - 40;
 
@@ -1037,7 +556,7 @@
             datasets: [
                 {
                     label: 'Automated',
-                    data: [10,0,0,0,0,3,0,0],
+                    data: [0,0,0,0,0,0,0,0],
                     backgroundColor: ['rgba(153,204,51,0.5)','rgba(165, 199, 238, 0.5)','rgba(168, 168, 168, 0.5)','rgba(238, 224, 152, 0.75)','rgba(255, 153, 102, 0.5)','rgba(255, 22, 49, 0.5)','rgba(255, 97, 8, 0.5)','rgba(255, 104, 255, 0.5)','rgba(83, 50, 168, 0.5)'],
                     borderColor: ['rgba(153,204,51,1)','rgba(165, 199, 238, 1)','rgba(168, 168, 168, 1)','rgba(238, 224, 152, 1)','rgba(255, 153, 102, 1)','rgba(255, 22, 49, 1)','rgba(255, 97, 8, 1)','rgba(255, 104, 255, 1)','rgba(83, 50, 168, 1)'],
                     borderWidth: 1
@@ -1120,7 +639,7 @@
             datasets: [{
                 label: 'Number of tests per duration',
                 fill: false,
-                data: ['0','0','12','7','0','0','0','0'],
+                data: ['0','0','0','0','0','0','0','0'],
                 backgroundColor: 'rgba(83, 146, 255,0.5)',
                 borderColor: 'rgba(83, 146, 255, 1)',
             }]

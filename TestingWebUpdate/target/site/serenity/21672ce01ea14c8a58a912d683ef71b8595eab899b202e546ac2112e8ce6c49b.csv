@@ -1,4 +1,0 @@
-"Story","Title","Result","Date","Stability","Duration (s)"
-"Add Data Dokter - Admin","As a admin i want to add data dokter - Valid","SUCCESS","2022-07-16T12:22:38.964766+07:00[Asia/Bangkok]","0.0","38.47"
-"Add Data Dokter - Admin","As a admin i want to add data dokter - Kosong","FAILURE","2022-07-16T12:23:17.4592559+07:00[Asia/Bangkok]","0.0","176.46"
-"Add Data Dokter - Admin","As a admin i want to add data dokter - Invalid","FAILURE","2022-07-16T12:26:13.9231746+07:00[Asia/Bangkok]","0.0","152.6"
