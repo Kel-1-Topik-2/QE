@@ -5,9 +5,9 @@ name: Java CI with Maven (API)
 
 on:
   push:
-    branches: [ "master,devTest-API" ]
+    branches: [ "master,devTest-Api" ]
   pull_request:
-    branches: [ "master,devTest-API" ]
+    branches: [ "master,devTest-Api" ]
 
 defaults:
   run:
